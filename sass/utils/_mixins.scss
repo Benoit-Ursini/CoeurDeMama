@@ -1,0 +1,26 @@
+@mixin font-h1 {
+  font-family: "Simonetta", serif;
+  font-size: 32px;
+  color: $color-black;
+  font-weight: 400;
+}
+
+@mixin font-nav {
+  font-family: "Simonetta", serif;
+  font-size: 24px;
+  color: $color-black;
+}
+
+@mixin font-p {
+  font-family: "Open sans", sans-serif;
+  font-size: 20px;
+  color: $color-black;
+}
+
+@mixin opacity {
+  opacity: 0.6;
+}
+
+@mixin border {
+  border: solid 2px black;
+}
