@@ -21,6 +21,9 @@
 
     &__img {
       height: 18vh;
+      @media screen and (max-width: $responsive) {
+        display: none;
+      }
 
       &--link {
         &:hover {

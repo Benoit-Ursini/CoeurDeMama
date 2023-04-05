@@ -2,6 +2,9 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  @media screen and (max-width: $responsive) {
+    flex-direction: column;
+  }
 
   &__img {
     object-fit: cover;
@@ -12,7 +15,6 @@
 
     &--landscape {
       height: 500px;
-      transform: rotate(0.25turn);
     }
   }
 }
@@ -22,12 +24,18 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   padding: 2rem;
+  @media screen and (max-width: $responsive) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .service {
   border-radius: 1rem;
   background-color: $color-white;
   box-shadow: 0.25rem 0.25rem 0.25rem $color-nav;
+  @media screen and (max-width: $responsive) {
+    width: 50vw;
+  }
 
   &:hover {
     cursor: pointer;
