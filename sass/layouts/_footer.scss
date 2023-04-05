@@ -1,4 +1,62 @@
-footer {
-  background-color: $color-bkgd1;
-  text-align: center;
+.footer {
+  background: $color-nav;
+  padding: 1rem;
+
+  &container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &block {
+    width: 12vw;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__link {
+    color: $color-black;
+
+    &--title {
+      @include font-h2;
+      font-weight: bold;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        background: $color-section;
+        width: 100%;
+        height: 4px;
+        top: 100%;
+        left: 0;
+      }
+
+      &:hover {
+        color: $color-bkgd;
+      }
+
+      &:hover::after {
+        transition: transform 0.5s;
+        transform: scaleX(0);
+        transform-origin: right;
+      }
+    }
+
+    &--small {
+      text-decoration: underline $color-section;
+      display: inline;
+      &:hover {
+        color: $color-bkgd;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+  }
 }

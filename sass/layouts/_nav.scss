@@ -1,0 +1,125 @@
+.nav {
+  height: $height-nav;
+  background: $color-nav;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: $responsive) {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+  }
+
+  &logo {
+    display: none;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+    @media screen and (max-width: $responsive) {
+      display: flex;
+      position: relative;
+      z-index: 20;
+    }
+
+    &:hover {
+      background: $color-section;
+    }
+
+    &__img {
+      height: 6vh;
+    }
+
+    &__title {
+      @include font-h2;
+    }
+  }
+
+  &toggle {
+    display: none;
+    @media screen and (max-width: $responsive) {
+      display: block;
+      font-size: 2rem;
+      cursor: pointer;
+      position: relative;
+      z-index: 20;
+    }
+  }
+
+  &menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    @media screen and (max-width: $responsive) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: $color-nav;
+      flex-direction: column;
+      justify-content: space-evenly;
+      transform: translateX(-100%);
+      transition: transform 1s;
+    }
+
+    &__link {
+      @include font-h2;
+      height: $height-nav;
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+      @media screen and (max-width: $responsive) {
+        font-size: 2rem;
+        width: 100vh;
+        justify-content: center;
+      }
+
+      &:hover {
+        background: $color-section;
+      }
+    }
+
+    &--responsive {
+      display: none;
+      @media screen and (max-width: $responsive) {
+        display: flex;
+        gap: 3rem;
+      }
+    }
+
+    &__img {
+      height: 3rem;
+
+      &:hover {
+        @include opacity;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $responsive) {
+  .ouvrir {
+    display: block;
+  }
+
+  #fermer {
+    display: none;
+  }
+
+  .open .ouvrir {
+    display: none;
+  }
+
+  .open #fermer {
+    display: block;
+  }
+
+  .open .navmenu {
+    transform: translateX(0);
+  }
+}

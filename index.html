@@ -2,10 +2,11 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="./images/shortcut.png" />
+    <link rel="shortcut icon" href="./images/logos/shortcut.png" />
     <title>Coeur de mama - doula</title>
     <meta name="description" content="" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -22,175 +23,229 @@
   </head>
 
   <body>
-    <header class="header">
-      <script>
-        let toggle = document.querySelector(".toggle");
-        let body = document.querySelector("body");
-
-        toggle.addEventListener("click", function () {
-          body.classList.toggle("open");
-        });
-      </script>
+    <header>
+      <div class="header">
+        <div class="headernetwork">
+          <a href="https://www.instagram.com/coeur_de_mama_/" target="_blank">
+            <img
+              class="headernetwork__img"
+              src="./images/contact/instagram.svg"
+              alt="Logo Instagram"
+            />
+          </a>
+          <a href="" target="_blank">
+            <img
+              class="headernetwork__img"
+              src="./images/contact/facebook.svg"
+              alt="Logo Facebook"
+            />
+          </a>
+        </div>
+        <div class="headerlogo headerlogo--desktop">
+          <img
+            class="headerlogo__img"
+            src="./images/logos/leaf1.svg"
+            alt="Dessin d'une branche avec des feuilles"
+          />
+          <a href="index.html">
+            <img
+              class="headerlogo__img headerlogo__img--link"
+              src="./images/logos/logo.svg"
+              alt="Logo Coeur de mama"
+            />
+          </a>
+          <img
+            class="headerlogo__img"
+            src="./images/logos/leaf2.svg"
+            alt="Dessin d'une branche avec des feuilles"
+          />
+        </div>
+        <div class="headertitle">
+          <p class="headertitle__txt">Coeur de mama</p>
+        </div>
+      </div>
 
       <nav class="nav">
-        <a class="nav__logo" href="index.html">
+        <a class="navlogo" href="index.html">
           <img
-            class="nav__logo--img"
-            src="./images/logo.svg"
-            alt="Logo coeur de mama"
+            class="navlogo__img"
+            src="./images/logos/logo.svg"
+            alt="Logo Coeur de mama"
           />
-          <p class="nav__logo--title">Coeur de mama</p>
+          <p class="navlogo__title">Coeur de mama</p>
         </a>
 
-        <div class="toggle">
+        <div class="navtoggle">
           <i class="fas fa-bars ouvrir"></i>
-          <i id="fermer" class="fas fa-times fermer"></i>
+          <i id="fermer" class="fas fa-times"></i>
         </div>
 
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__item--link" href="./index.html">Accueil</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__item--link" href="./messervices.html"
-              >Mes services</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__item--link" href="./monparcours.html"
-              >Mon parcours</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__item--link" href="./blog.html">Blog</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__item--link" href="./contact.php">Contact</a>
+        <script>
+          let toggle = document.querySelector(".navtoggle");
+          let body = document.querySelector("body");
+
+          toggle.addEventListener("click", function () {
+            body.classList.toggle("open");
+          });
+        </script>
+
+        <ul class="navmenu">
+          <li>
+            <a class="navmenu__link" href="./index.html">Accueil</a>
           </li>
           <li>
-            <a class="menu__network--link" href="" target="_blank">
-              <img
-                class="menu__network--img"
-                src="./images/contact/facebook.svg"
-                alt="Logo Facebook"
-              />
-            </a>
+            <a class="navmenu__link" href="./messervices.html">Mes services</a>
           </li>
           <li>
-            <a
-              class="menu__network--link"
-              href="https://www.instagram.com/coeur_de_mama_/"
-              target="_blank"
-            >
+            <a class="navmenu__link" href="./monparcours.html">Mon parcours</a>
+          </li>
+          <li>
+            <a class="navmenu__link" href="./blog.html">Blog</a>
+          </li>
+          <!-- <li>
+            <a class="navmenu__link" href="./vosretours.html">Vos retours</a>
+          </li> -->
+          <li>
+            <a class="navmenu__link" href="./contact.php">Contact</a>
+          </li>
+          <div class="navmenu--responsive">
+            <a href="https://www.instagram.com/coeur_de_mama_/" target="_blank">
               <img
-                class="menu__network--img"
+                class="navmenu__img"
                 src="./images/contact/instagram.svg"
                 alt="Logo Instagram"
               />
             </a>
-          </li>
+            <a href="" target="_blank">
+              <img
+                class="navmenu__img"
+                src="./images/contact/facebook.svg"
+                alt="Logo Facebook"
+              />
+            </a>
+          </div>
         </ul>
       </nav>
     </header>
 
     <main>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit repellat
-        ipsam reiciendis deleniti, debitis a consectetur sint voluptates neque
-        voluptatem id earum ab. Id totam amet accusamus cumque sint modi? Ipsa
-        autem doloremque veritatis provident similique perferendis dolore eos
-        quisquam asperiores illo blanditiis fugiat, quia rem odio adipisci
-        deserunt quaerat impedit consectetur esse quibusdam numquam inventore
-        tenetur. Quas, aliquid facere? Aliquid, laborum tenetur! Aperiam
-        perferendis, saepe excepturi et iusto quidem sequi vero? Vel, illo
-        temporibus! Earum aut dicta iste beatae accusamus, non quod. At
-        consequuntur voluptas excepturi? Quo, officiis fuga? Hic adipisci natus
-        in assumenda veniam nesciunt dignissimos at, iste nulla id animi, nihil
-        harum quia deleniti vitae pariatur excepturi eveniet doloremque, omnis
-        quas debitis iure! Et tempora deleniti nulla. Dolores facilis, fugit
-        maxime dolor vel officia rem sit sed cum eligendi omnis. Natus repellat
-        magni architecto deserunt iusto culpa unde. Odio quaerat accusantium
-        fuga quia aliquam sequi ex maxime. Reiciendis recusandae cumque,
-        consequuntur error, ratione ad veniam neque illum ex voluptatem aperiam
-        incidunt velit atque optio magni quasi possimus delectus suscipit ipsam
-        pariatur cupiditate rem vel facilis aut? Nemo. Eius quas numquam, nam ut
-        expedita tempore ad porro natus quidem obcaecati facilis facere, vitae
-        accusamus cupiditate vero eligendi pariatur nostrum? Natus quam odio
-        omnis aut, praesentium eius cum alias. A alias, exercitationem
-        voluptates, esse nihil quae provident excepturi qui dolore explicabo
-        quam similique ipsa atque! Ducimus, atque soluta quis dicta iusto nemo
-        fugit quidem harum aliquid et porro dolorem? Itaque magni architecto
-        sapiente fugiat odio mollitia, placeat nam voluptatem quod inventore
-        minus vero eius assumenda amet accusamus recusandae consectetur
-        distinctio nulla sit consequuntur unde commodi rem corrupti laboriosam.
-        Nam. Quaerat ex velit nisi. Consequuntur dicta repellendus, adipisci
-        impedit amet quidem necessitatibus laboriosam fugiat provident,
-        blanditiis esse quia illum laborum. Nihil, repellendus. Culpa, eligendi
-        beatae. Suscipit asperiores odio dicta vitae? Iste officia velit iusto
-        nesciunt sint possimus quis! Explicabo commodi nobis veniam. Vel
-        recusandae nesciunt, amet eos vero reprehenderit ipsam. Error natus
-        eaque modi dolorem aspernatur, debitis saepe facilis voluptatibus. At
-        alias ducimus sed cupiditate iusto facere reiciendis, dignissimos
-        eveniet voluptates veritatis quos atque et eius molestiae esse
-        blanditiis ex repellendus eligendi dolorum ipsam laborum pariatur
-        placeat tempora! Sed, ad? Debitis, modi sapiente! Fugiat necessitatibus
-        vitae debitis cupiditate sapiente officiis earum minima odio consequatur
-        veniam repellendus qui ad error aut nulla molestiae accusamus, harum
-        facilis expedita fuga laborum. Earum, laborum. Officia magnam eum vel,
-        dignissimos ex ducimus quos quae dolor doloremque accusantium, sit illo
-        quod! Eum dolorem optio, quidem pariatur ratione repudiandae ut in iste,
-        laudantium ea exercitationem suscipit sit. Maiores eos quia explicabo
-        eius earum deleniti, rem dolorum. Saepe voluptatibus blanditiis sapiente
-        magnam quisquam sint, eveniet recusandae dolorum accusamus cupiditate
-        quo minus nulla maxime quibusdam animi asperiores harum aliquid.
-        Praesentium voluptatibus nemo neque? Dignissimos mollitia qui a minima
-        provident quisquam dolorem, magnam nemo maxime esse molestias doloribus
-        adipisci fugiat tenetur. Modi, delectus. Voluptatem sint eos, facilis
-        doloribus reiciendis architecto. Voluptatibus magnam amet voluptas
-        nostrum officiis qui omnis obcaecati! Officia nihil eos repellendus
-        omnis sit! Temporibus sapiente quia nisi cupiditate numquam, itaque
-        commodi eaque. Assumenda reiciendis ipsa nam unde quis! Aut amet hic
-        quam eum laboriosam laudantium id assumenda inventore neque aliquam,
-        veniam quidem facere animi dignissimos corporis enim architecto, esse
-        rem modi omnis quas ipsam? Modi quas iusto rem! Libero consequuntur
-        enim, dolore consequatur qui reprehenderit repudiandae adipisci dolorum
-        iure nobis a vel maxime distinctio perferendis incidunt deleniti
-        asperiores quidem, doloribus architecto, corrupti illo repellat ea
-        laudantium eos! Voluptatem? Molestiae distinctio excepturi dolores.
-        Quaerat architecto veritatis consequuntur dignissimos dolorum et soluta
-        voluptatibus amet recusandae nobis, eveniet corrupti aperiam hic
-        quisquam nihil possimus beatae saepe officia commodi minima. Architecto,
-        porro. Suscipit hic ipsam velit, veritatis nesciunt aliquid reiciendis
-        minus quae? Reiciendis officiis sit sapiente alias blanditiis itaque
-        perferendis eaque, doloremque corrupti nemo, hic perspiciatis maxime
-        beatae soluta ratione similique fugit! Quas, voluptate totam repellat
-        quos doloremque, saepe molestiae aut quae libero perferendis nulla vel
-        laboriosam, quasi natus. Natus repudiandae neque doloremque tenetur
-        molestiae impedit dicta perferendis corrupti nesciunt, omnis modi!
-        Optio, facere delectus debitis provident ea fugit eaque architecto
-        quidem fugiat dicta a assumenda minus vitae id soluta natus impedit eum
-        expedita officiis temporibus harum explicabo laboriosam reprehenderit.
-        Consequatur, dolor. Ullam necessitatibus, reprehenderit et culpa odio
-        accusamus, voluptatibus maxime iure nisi obcaecati, dicta aut
-        praesentium. In aliquam, tempore quidem consectetur, saepe nemo eveniet,
-        voluptas illo rem possimus numquam soluta quos. Reiciendis eius deleniti
-        incidunt vero, expedita sit eveniet ipsa dicta aperiam nostrum
-        praesentium cumque sequi, labore, harum impedit libero aliquid veniam
-        tenetur animi. Tempore aut ullam recusandae numquam eum delectus!
-      </p>
+      <section>
+        <q
+          >T’accompagner et t’écouter, Te rappeler à quel point tu es forte et
+          ton corps sait, Te soutenir dans ta vulnérabilité, T’apporter du
+          réconfort et de l’amour, à toi qui donnes la vie et qui te sens
+          parfois oubliée, Être cette présence discrète sur qui tu pourras
+          t’appuyer, Avoir le privilège d’être témoin d’instants sacrés, Ou le
+          visible et l’invisible sont plus que jamais liés, T’aider à retrouver
+          cette souveraineté, Pour accueillir comme tu le souhaites cette petite
+          âme qui vient s’incarner, Et si tu doutes, je serai là pour te
+          rappeler, a quel point tu es puissante et douée, Toi qui enfantes
+          l’humanité…
+        </q>
+      </section>
+      <section>
+        <p>
+          Une des choses qui m’anime le plus en tant que doula, c’est d’informer
+          les femmes et les couples.
+          <br />
+          Je ne suis pas cette doula qui te dis de ne pas prendre de péridurale
+          ou d’accoucher dans tel ou tel position. Non, je suis celle qui te
+          donne toutes les informations pour que tu fasses des choix réellement
+          éclairés.
+          <br />
+          Je veux que quand tu te retrouves à la maternité, à la maison de
+          naissance ou même dans ton salon au moment de ton accouchement, tu
+          sois pleinement souveraine et confiante.
+          <br />
+          Que tu détiennes des techniques mais aussi des savoirs sur ta propre
+          physiologie, qui te permette simplement de faire tes propres choix.
+          <br />
+          Alors aujourd’hui, grâce à mes compétences de doula, de coach
+          périnatal et surtout de maman, j’ai à cœur de t’accompagner dans ces
+          instants sacrés que tu vas vivre : la conception de ton enfant, ta
+          grossesse, ton accouchement, ton post partum.
+        </p>
+      </section>
+      <article>
+        <h2>Mes services</h2>
+        <div class="container-grid">
+          <a class="service">
+            <img class="service__img" src="./images/background2.jpg" alt="" />
+            <h3 class="service__title">Pack plan de naissace</h3>
+          </a>
+          <a class="service">
+            <img class="service__img" src="./images/background2.jpg" alt="" />
+            <h3 class="service__title">
+              RDV individuel <br />thématique précise
+            </h3>
+          </a>
+          <a class="service">
+            <img class="service__img" src="./images/background2.jpg" alt="" />
+            <h3 class="service__title">Masterclass & Formations</h3>
+          </a>
+          <a class="service">
+            <img class="service__img" src="./images/background2.jpg" alt="" />
+            <h3 class="service__title">
+              En présentiel <br />Algarve (Portugal)
+            </h3>
+          </a>
+        </div>
+      </article>
     </main>
 
-    <footer>
-      <h3>Sara Bouziane Ursini</h3>
-      <p>
-        <a href="tel:+33635105536">06 35 10 55 36</a>
+    <footer class="footer">
+      <div class="footercontainer">
+        <div class="footerblock">
+          <a
+            class="footer__link footer__link--title"
+            href="./contact.php/#prendrerdv"
+            >Prendre rendez-vous</a
+          >
+        </div>
+        <a href="index.html">
+          <img
+            class="headerlogo__img headerlogo__img--link"
+            src="./images/logos/logo.svg"
+            alt="Logo Coeur de mama"
+          />
+        </a>
+
+        <div class="footerblock">
+          <a class="footer__link footer__link--title" href="./contact.php"
+            >Contactez-moi</a
+          >
+          <div class="headernetwork">
+            <a href="https://www.instagram.com/coeur_de_mama_/" target="_blank">
+              <img
+                class="headernetwork__img"
+                src="./images/contact/instagram.svg"
+                alt="Logo Instagram"
+              />
+            </a>
+            <a href="" target="_blank">
+              <img
+                class="headernetwork__img"
+                src="./images/contact/facebook.svg"
+                alt="Logo Facebook"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer__text">
+        <a class="footer__link footer__link--small" href="./CGV.html"
+          >Mentions légales & CGV</a
+        >
       </p>
-      <p>
-        <a href="mailto:coeur.de.mama@gmail.com">coeur.de.mama@gmail.com</a>
-      </p>
-      <p>
-        Copyright &copy; 2023 | Coeur de mama | Created by Benoit Ursini |
-        <a href="">Mentions légales & CGV</a>
+      <p class="footer__text">
+        Copyright &copy; 2023 | Coeur de mama | Created by
+        <a
+          class="footer__link footer__link--small"
+          href="http://benoit-ursini.com/"
+          target="_blank"
+          >Benoit Ursini</a
+        >
       </p>
     </footer>
   </body>

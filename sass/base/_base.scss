@@ -6,17 +6,41 @@
 }
 body {
   font-size: 16px;
+  background-color: $color-bkgd;
 }
 
 main {
-  // position: relative;
-  // margin-top: 110px;
+  margin: auto;
+  margin-top: 10vh;
+  width: 60%;
+}
+
+section,
+article {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+article {
+  background: $color-section;
 }
 
 h1 {
   @include font-h1;
 }
 
+h2 {
+  @include font-h2;
+}
+
+h3 {
+  @include font-h3;
+}
+
 p {
-  font-size: 20px;
+  @include font-p;
+}
+
+q {
+  @include font-q;
 }
