@@ -11,13 +11,14 @@ body {
 
 main {
   margin: auto;
-  margin-top: 10vh;
-  width: 60%;
+  @media screen and (max-width: $responsive) {
+    margin-top: 10vh;
+  }
 }
 
 section,
 article {
-  padding: 1.5rem;
+  padding: 1.5rem 20vw 1.5rem 20vw;
   margin-bottom: 2rem;
 }
 

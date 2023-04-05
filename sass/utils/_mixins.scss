@@ -22,14 +22,18 @@
 @mixin font-p {
   font-family: "Open sans", sans-serif;
   font-size: 1.2rem;
+  line-height: 1.5rem;
   color: $color-black;
+  text-align: center;
 }
 
 @mixin font-q {
   font-family: "Simonetta", serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
   color: $color-black;
   font-style: italic;
+  text-align: center;
   quotes: "“" "„";
 }
 
