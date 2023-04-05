@@ -55,6 +55,7 @@
     align-items: center;
     width: 60vw;
     @media screen and (max-width: $responsive) {
+      box-sizing: border-box;
       position: absolute;
       top: 0;
       left: 0;
@@ -74,31 +75,29 @@
       align-items: center;
       padding: 0 1rem;
       @media screen and (max-width: $responsive) {
+        box-sizing: border-box;
         font-size: 2rem;
-        width: 100vh;
+        width: 100%;
         justify-content: center;
       }
 
       &:hover {
         background: $color-section;
         box-shadow: 0 10px 20px $color-nav;
+        @media screen and (max-width: $responsive) {
+          box-sizing: border-box;
+          box-shadow: none;
+        }
       }
     }
 
     &--responsive {
       display: none;
       @media screen and (max-width: $responsive) {
+        box-sizing: border-box;
         display: flex;
         gap: 3rem;
         font-size: 3rem;
-      }
-    }
-
-    &__img {
-      height: 3rem;
-
-      &:hover {
-        @include opacity;
       }
     }
   }

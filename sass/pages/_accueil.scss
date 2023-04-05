@@ -18,38 +18,3 @@
     }
   }
 }
-
-.container-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  padding: 2rem;
-  @media screen and (max-width: $responsive) {
-    grid-template-columns: 1fr;
-  }
-}
-
-.service {
-  border-radius: 1rem;
-  background-color: $color-white;
-  box-shadow: 0.25rem 0.25rem 0.25rem $color-nav;
-  @media screen and (max-width: $responsive) {
-    width: 50vw;
-  }
-
-  &:hover {
-    cursor: pointer;
-    transition: transform 0.5s;
-    transform: scale(1.1);
-    box-shadow: 0.5rem 0.5rem 0.5rem $color-nav;
-  }
-
-  &__img {
-    width: 100%;
-    border-radius: 1rem 1rem 0 0;
-  }
-
-  &__title {
-    padding: 1rem;
-  }
-}

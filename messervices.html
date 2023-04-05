@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./images/logos/shortcut.png" />
+    <title>Coeur de mama - doula</title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Simonetta&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <div class="headernetwork">
+          <a
+            href="https://www.instagram.com/coeur_de_mama_/"
+            target="_blank"
+            class="fa fa-instagram"
+          ></a>
+          <a href="" target="_blank" class="fa fa-facebook"></a>
+        </div>
+        <div class="headerlogo headerlogo--desktop">
+          <img
+            class="headerlogo__img"
+            src="./images/logos/leaf1.svg"
+            alt="Dessin d'une branche avec des feuilles"
+          />
+          <a href="index.html">
+            <img
+              class="headerlogo__img headerlogo__img--link"
+              src="./images/logos/logo.svg"
+              alt="Logo Coeur de mama"
+            />
+          </a>
+          <img
+            class="headerlogo__img"
+            src="./images/logos/leaf2.svg"
+            alt="Dessin d'une branche avec des feuilles"
+          />
+        </div>
+        <div class="headertitle">
+          <p class="headertitle__txt">Coeur de mama</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="navlogo" href="index.html">
+          <img
+            class="navlogo__img"
+            src="./images/logos/logo.svg"
+            alt="Logo Coeur de mama"
+          />
+          <p class="navlogo__title">Coeur de mama</p>
+        </a>
+
+        <div class="navtoggle">
+          <i class="fas fa-bars ouvrir"></i>
+          <i id="fermer" class="fas fa-times"></i>
+        </div>
+
+        <script>
+          let toggle = document.querySelector(".navtoggle");
+          let body = document.querySelector("body");
+
+          toggle.addEventListener("click", function () {
+            body.classList.toggle("open");
+          });
+        </script>
+
+        <ul class="navmenu">
+          <li>
+            <a class="navmenu__link" href="./index.html">Accueil</a>
+          </li>
+          <li>
+            <a class="navmenu__link" href="./messervices.html">Mes services</a>
+          </li>
+          <li>
+            <a class="navmenu__link" href="./monparcours.html">Mon parcours</a>
+          </li>
+          <li>
+            <a class="navmenu__link" href="./blog.html">Blog</a>
+          </li>
+          <!-- <li>
+            <a class="navmenu__link" href="./vosretours.html">Vos retours</a>
+          </li> -->
+          <li>
+            <a class="navmenu__link" href="./contact.php">Contact</a>
+          </li>
+          <div class="navmenu--responsive">
+            <a
+              href="https://www.instagram.com/coeur_de_mama_/"
+              target="_blank"
+              class="fa fa-instagram"
+            ></a>
+            <a href="" target="_blank" class="fa fa-facebook"></a>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1 class="service__heading">Mes services</h1>
+        <div class="container-grid">
+          <a class="service">
+            <img class="service__img" src="./images/background2.jpg" alt="" />
+            <h2 class="service__title">Pack plan de naissace</h2>
+          </a>
+          <a class="service">
+            <img class="service__img" src="./images/background2.jpg" alt="" />
+            <h2 class="service__title">
+              RDV individuel <br />thématique précise
+            </h2>
+          </a>
+          <a class="service">
+            <img class="service__img" src="./images/background2.jpg" alt="" />
+            <h2 class="service__title">Masterclass & Formations</h2>
+          </a>
+          <a class="service">
+            <img class="service__img" src="./images/background2.jpg" alt="" />
+            <h2 class="service__title">
+              En présentiel <br />Algarve (Portugal)
+            </h2>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footercontainer">
+        <div class="footerblock">
+          <a
+            class="footer__link footer__link--title"
+            href="./contact.php/#prendrerdv"
+            >Prendre rendez-vous</a
+          >
+        </div>
+        <a href="index.html">
+          <img
+            class="headerlogo__img headerlogo__img--link"
+            src="./images/logos/logo.svg"
+            alt="Logo Coeur de mama"
+          />
+        </a>
+
+        <div class="footerblock">
+          <a class="footer__link footer__link--title" href="./contact.php"
+            >Contactez-moi</a
+          >
+          <div class="headernetwork">
+            <a
+              href="https://www.instagram.com/coeur_de_mama_/"
+              target="_blank"
+              class="fa fa-instagram"
+            ></a>
+            <a href="" target="_blank" class="fa fa-facebook"></a>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer__text">
+        <a class="footer__link footer__link--small" href="./CGV.html"
+          >Mentions légales & CGV</a
+        >
+      </p>
+      <p class="footer__text">
+        Copyright &copy; 2023 | Coeur de mama | Created by
+        <a
+          class="footer__link footer__link--small"
+          href="http://benoit-ursini.com/"
+          target="_blank"
+          >Benoit Ursini</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

@@ -20,6 +20,9 @@ section,
 article {
   padding: 1.5rem 20vw 1.5rem 20vw;
   margin-bottom: 2rem;
+  @media screen and (max-width: $responsive) {
+    padding: 2rem;
+  }
 }
 
 article {
