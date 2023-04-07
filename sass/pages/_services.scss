@@ -1,17 +1,18 @@
-.container-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  padding: 2rem;
-  @media screen and (max-width: $responsive) {
-    grid-template-columns: 1fr;
+.services {
+  width: 80%;
+  @media screen and (max-width: $responsive-laptop) {
+    width: 70%;
+  }
+  @media screen and (max-width: $responsive-phone) {
+    width: 90%;
   }
 }
 
-.service {
+.cards {
   border-radius: 1rem;
   background-color: $color-white;
   box-shadow: 0.25rem 0.25rem 0.25rem $color-nav;
+  @include animation(1.5s);
 
   &:hover {
     cursor: pointer;
@@ -20,16 +21,33 @@
     box-shadow: 0.5rem 0.5rem 0.5rem $color-nav;
   }
 
-  &__heading {
-    text-align: center;
-  }
-
   &__img {
     width: 100%;
     border-radius: 1rem 1rem 0 0;
+
+    &--services {
+      height: 500px;
+      object-fit: cover;
+      @media screen and (max-width: $responsive-laptop) {
+        height: 400px;
+      }
+      @media screen and (max-width: $responsive-phone) {
+        height: 300px;
+      }
+    }
   }
 
   &__title {
     padding: 1rem;
+    color: $color-nav;
+  }
+
+  &__description {
+    color: $color-black;
+    margin: 0 1rem 2rem 1rem;
+    text-align: justify;
+    border-top: 2px solid $color-section;
+    font-size: 1rem;
+    font-style: italic;
   }
 }

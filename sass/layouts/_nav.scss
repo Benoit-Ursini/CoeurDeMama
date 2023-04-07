@@ -5,13 +5,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width: $responsive) {
+  @media screen and (max-width: $responsive-laptop) {
     box-sizing: border-box;
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
     justify-content: space-between;
+    z-index: 10;
   }
 
   &logo {
@@ -19,7 +20,7 @@
     align-items: center;
     height: 100%;
     padding: 0 1rem;
-    @media screen and (max-width: $responsive) {
+    @media screen and (max-width: $responsive-laptop) {
       display: flex;
       position: relative;
       z-index: 20;
@@ -34,13 +35,13 @@
     }
 
     &__title {
-      @include font-h2;
+      @include font-nav;
     }
   }
 
   &toggle {
     display: none;
-    @media screen and (max-width: $responsive) {
+    @media screen and (max-width: $responsive-laptop) {
       display: block;
       font-size: 2rem;
       cursor: pointer;
@@ -54,7 +55,7 @@
     justify-content: space-between;
     align-items: center;
     width: 60vw;
-    @media screen and (max-width: $responsive) {
+    @media screen and (max-width: $responsive-laptop) {
       box-sizing: border-box;
       position: absolute;
       top: 0;
@@ -69,12 +70,12 @@
     }
 
     &__link {
-      @include font-h2;
+      @include font-nav;
       height: $height-nav;
       display: flex;
       align-items: center;
       padding: 0 1rem;
-      @media screen and (max-width: $responsive) {
+      @media screen and (max-width: $responsive-laptop) {
         box-sizing: border-box;
         font-size: 2rem;
         width: 100%;
@@ -84,7 +85,7 @@
       &:hover {
         background: $color-section;
         box-shadow: 0 10px 20px $color-nav;
-        @media screen and (max-width: $responsive) {
+        @media screen and (max-width: $responsive-laptop) {
           box-sizing: border-box;
           box-shadow: none;
         }
@@ -93,7 +94,7 @@
 
     &--responsive {
       display: none;
-      @media screen and (max-width: $responsive) {
+      @media screen and (max-width: $responsive-laptop) {
         box-sizing: border-box;
         display: flex;
         gap: 3rem;
@@ -103,7 +104,7 @@
   }
 }
 
-@media screen and (max-width: $responsive) {
+@media screen and (max-width: $responsive-laptop) {
   .ouvrir {
     display: block;
   }

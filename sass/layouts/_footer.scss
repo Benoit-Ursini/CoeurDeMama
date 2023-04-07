@@ -5,19 +5,19 @@
   &container {
     display: flex;
     justify-content: center;
-    @media screen and (max-width: $responsive) {
+    @media screen and (max-width: $responsive-laptop) {
       flex-direction: column;
       align-items: center;
     }
   }
 
   &block {
-    width: 12vw;
+    width: 20%;
     padding-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media screen and (max-width: $responsive) {
+    @media screen and (max-width: $responsive-laptop) {
       width: 100%;
       padding-top: 2rem;
     }
@@ -27,7 +27,7 @@
     color: $color-black;
 
     &--title {
-      @include font-h2;
+      @include font-nav;
       font-weight: bold;
       position: relative;
 
