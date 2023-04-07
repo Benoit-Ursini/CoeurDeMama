@@ -1,7 +1,10 @@
 .services {
-  width: 80%;
+  width: 70%;
+  @media screen and (max-width: $responsive-large) {
+    width: 90%;
+  }
   @media screen and (max-width: $responsive-laptop) {
-    width: 70%;
+    width: 60%;
   }
   @media screen and (max-width: $responsive-phone) {
     width: 90%;
@@ -26,7 +29,7 @@
     border-radius: 1rem 1rem 0 0;
 
     &--services {
-      height: 500px;
+      height: 600px;
       object-fit: cover;
       @media screen and (max-width: $responsive-laptop) {
         height: 400px;

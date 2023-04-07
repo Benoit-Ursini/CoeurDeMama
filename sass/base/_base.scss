@@ -21,31 +21,28 @@ main {
 section {
   width: 60%;
   margin: auto;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  background-color: $color-bkgd;
+  position: relative;
+  z-index: 5;
   @media screen and (max-width: $responsive-laptop) {
     width: 80%;
   }
 }
 
 article {
-  padding: 1.5rem 10%;
+  padding: 0 10%;
   margin-bottom: 2rem;
+  background: $color-section;
   @media screen and (max-width: $responsive-laptop) {
-    padding: 2rem 10%;
+    padding: 0 10%;
   }
 }
 
-article {
-  background: $color-section;
-}
-
-h1 {
-  @include font-h1;
-  @include animation;
-}
-
+h1,
 h2 {
-  @include font-h2;
+  @include font-h1-h2;
+  @include animation;
 }
 
 h3 {

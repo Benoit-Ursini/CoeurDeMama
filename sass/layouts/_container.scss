@@ -1,24 +1,109 @@
-.container-cards-grid {
-  &-accueil {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    padding: 2rem;
-    @media screen and (max-width: $responsive-laptop) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @media screen and (max-width: $responsive-phone) {
-      grid-template-columns: 1fr;
+.container {
+  &-grid {
+    &-cards {
+      &-accueil {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        padding-bottom: 2rem;
+        @media screen and (max-width: $responsive-laptop) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (max-width: $responsive-phone) {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      &-services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+        padding-bottom: 4rem;
+        @media screen and (max-width: $responsive-laptop) {
+          grid-template-columns: 1fr;
+        }
+      }
     }
   }
 
-  &-services {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-    padding: 0 4rem;
-    @media screen and (max-width: $responsive-laptop) {
-      grid-template-columns: 1fr;
+  &-timeline {
+    position: relative;
+    height: 1000px;
+
+    &-lines {
+      &-hidden {
+        width: 0.15rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        z-index: 2;
+      }
+      &-visible {
+        background: $color-black;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &-cursor {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 100%;
+      background: $color-white;
+      border: 0.15rem solid $color-black;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      margin-left: -0.3rem;
+      transform: translateY(4em);
+      z-index: 3;
+    }
+  }
+
+  &-formations {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 0.5rem;
+      background: $color-black;
+      left: 50%;
+      top: 0;
+      margin-left: -0.15rem;
+      z-index: 1;
+    }
+  }
+}
+
+.presentation {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  @media screen and (max-width: $responsive-laptop) {
+    flex-direction: column;
+  }
+
+  &-1 {
+    @include animation(1.5s);
+  }
+
+  &-2 {
+    @include animation(2.5s);
+  }
+
+  &__img {
+    object-fit: cover;
+
+    &--portrait {
+      height: 300px;
+    }
+
+    &--landscape {
+      height: 500px;
     }
   }
 }
