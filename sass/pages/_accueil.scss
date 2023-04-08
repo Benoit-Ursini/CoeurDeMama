@@ -1,0 +1,23 @@
+.home {
+  &-quote {
+    width: 60%;
+    margin: auto;
+  }
+
+  &-presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    @media screen and (max-width: $responsive-laptop) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__img {
+    display: block;
+    margin: auto;
+    padding: 2rem;
+  }
+}

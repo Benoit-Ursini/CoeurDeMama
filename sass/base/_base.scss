@@ -1,9 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   text-decoration: none;
 }
+
 body {
   font-size: 16px;
   background-color: $color-bkgd;
@@ -19,9 +17,7 @@ main {
 }
 
 section {
-  width: 60%;
-  margin: auto;
-  padding-bottom: 2rem;
+  margin: 2rem 0;
   background-color: $color-bkgd;
   position: relative;
   z-index: 5;
@@ -32,8 +28,9 @@ section {
 
 article {
   padding: 0 10%;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   background: $color-section;
+
   @media screen and (max-width: $responsive-laptop) {
     padding: 0 10%;
   }
@@ -42,7 +39,6 @@ article {
 h1,
 h2 {
   @include font-h1-h2;
-  @include animation;
 }
 
 h3 {
@@ -55,4 +51,19 @@ p {
 
 q {
   @include font-q;
+}
+
+[class*="reveal"] {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 2s;
+}
+
+.reveal-2 {
+  transition-delay: 0.5s;
 }

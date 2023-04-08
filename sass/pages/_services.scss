@@ -1,13 +1,9 @@
 .services {
-  width: 70%;
-  @media screen and (max-width: $responsive-large) {
-    width: 90%;
-  }
+  padding: 0 10%;
+  margin-bottom: 2rem;
+
   @media screen and (max-width: $responsive-laptop) {
-    width: 60%;
-  }
-  @media screen and (max-width: $responsive-phone) {
-    width: 90%;
+    padding: 0 10%;
   }
 }
 
@@ -15,7 +11,6 @@
   border-radius: 1rem;
   background-color: $color-white;
   box-shadow: 0.25rem 0.25rem 0.25rem $color-nav;
-  @include animation(1.5s);
 
   &:hover {
     cursor: pointer;
@@ -27,17 +22,6 @@
   &__img {
     width: 100%;
     border-radius: 1rem 1rem 0 0;
-
-    &--services {
-      height: 600px;
-      object-fit: cover;
-      @media screen and (max-width: $responsive-laptop) {
-        height: 400px;
-      }
-      @media screen and (max-width: $responsive-phone) {
-        height: 300px;
-      }
-    }
   }
 
   &__title {

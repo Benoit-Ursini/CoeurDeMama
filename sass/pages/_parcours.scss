@@ -4,4 +4,32 @@
     z-index: 5;
     background: $color-section;
   }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-family: "Dancing Script", serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $color-nav;
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+
+  &__link {
+    color: $color-black;
+    @include font-link-p($color-bkgd);
+  }
+
+  &__item {
+    text-align: left;
+
+    &::before {
+      content: "\1F49C";
+      padding-right: 0.5rem;
+    }
+  }
 }
