@@ -3,13 +3,16 @@
     &-cards {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 2rem;
+      gap: 3rem;
       padding-bottom: 2rem;
 
-      @media screen and (max-width: $responsive-laptop) {
+      @media screen and (max-width: $responsive-large) {
         grid-template-columns: repeat(2, 1fr);
+        padding: 4rem;
+        padding-top: 0;
+        gap: 4rem;
       }
-      @media screen and (max-width: $responsive-phone) {
+      @media screen and (max-width: $responsive-tablet) {
         grid-template-columns: 1fr;
       }
     }
@@ -72,40 +75,6 @@
       flex-direction: column;
       padding: 4rem 0;
     }
-
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   width: 0.5rem;
-    //   height: 0.5rem;
-    //   border-radius: 0.5rem;
-    //   background: $color-nav;
-    //   border: 0.1rem solid $color-bkgd;
-    //   left: 50%;
-    //   top: 0;
-    //   margin-left: -0.2rem;
-    //   z-index: 2;
-    //   @media screen and (max-width: $responsive-tablet) {
-    //     display: none;
-    //   }
-    // }
-
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   width: 0.5rem;
-    //   height: 0.5rem;
-    //   border-radius: 0.5rem;
-    //   background: $color-nav;
-    //   border: 0.1rem solid $color-bkgd;
-    //   left: 50%;
-    //   bottom: 1.8%;
-    //   margin-left: -0.2rem;
-    //   z-index: 2;
-    //   @media screen and (max-width: $responsive-tablet) {
-    //     display: none;
-    //   }
-    // }
 
     &-first {
       padding-top: 0;

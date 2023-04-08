@@ -12,17 +12,18 @@ body {
 main {
   margin: auto;
   @media screen and (max-width: $responsive-laptop) {
-    margin-top: 10vh;
+    margin-top: 8vh;
   }
 }
 
 section {
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   background-color: $color-bkgd;
   position: relative;
   z-index: 5;
   @media screen and (max-width: $responsive-laptop) {
-    width: 80%;
+    width: 90%;
+    margin: auto;
   }
 }
 
