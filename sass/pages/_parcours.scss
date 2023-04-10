@@ -7,6 +7,11 @@
     flex-direction: column;
   }
 
+  &-section {
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+  }
+
   &-1 {
     @media screen and (max-width: $responsive-laptop) {
       flex-direction: column-reverse;
@@ -23,7 +28,7 @@
   }
 
   &__img {
-    max-height: 450px;
+    max-height: 470px;
   }
 }
 
@@ -53,12 +58,13 @@
     @include font-link-p($color-bkgd);
   }
 
+  &__list {
+    list-style-position: outside;
+    list-style-type: "\1F49C";
+  }
+
   &__item {
     text-align: left;
-
-    &::before {
-      content: "\1F49C";
-      padding-right: 0.5rem;
-    }
+    padding-left: 0.5rem;
   }
 }

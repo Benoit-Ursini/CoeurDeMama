@@ -33,13 +33,13 @@
 @mixin font-p {
   font-family: "Open sans", sans-serif;
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 
 @mixin font-q {
   font-family: "Simonetta", serif;
   font-size: 1.3rem;
-  line-height: 1.7rem;
+  line-height: 2rem;
   font-style: italic;
   quotes: "“ " " „";
 }
