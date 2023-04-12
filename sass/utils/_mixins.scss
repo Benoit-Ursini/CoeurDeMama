@@ -1,4 +1,4 @@
-@mixin font-name {
+@mixin font-logo {
   font-family: "Simonetta", serif;
   font-size: 2rem;
   color: $color-black;
@@ -9,45 +9,38 @@
   font-family: "Simonetta", serif;
   font-size: 1.5rem;
   color: $color-black;
-  text-align: center;
 }
 
-@mixin font-h1-h2 {
+@mixin font-heading {
   font-family: "Dancing Script", serif;
   font-size: 2.5rem;
-  font-weight: bold;
-  padding: 3rem;
   line-height: 3rem;
+  font-weight: bold;
+  padding: 3rem 3rem 0 3rem;
+  margin-bottom: 3rem;
 }
 
-@mixin font-h3 {
+@mixin font-title {
   font-family: "Simonetta", serif;
   font-size: 1.5rem;
 }
 
-@mixin font-h4 {
-  font-family: "Simonetta", serif;
-  font-size: 1.25rem;
-}
-
-@mixin font-p {
+@mixin font-text {
   font-family: "Open sans", sans-serif;
   font-size: 1.2rem;
   line-height: 2rem;
 }
 
-@mixin font-q {
+@mixin font-simonetta {
   font-family: "Simonetta", serif;
   font-size: 1.3rem;
   line-height: 2rem;
-  font-style: italic;
-  quotes: "“ " " „";
 }
 
-@mixin font-link-p($underline: $color-section) {
+@mixin font-link-p($underline: $color-section, $color-hover: $color-bkgd) {
   text-decoration: underline $underline;
   &:hover {
-    color: $color-bkgd;
+    color: $color-hover;
     text-decoration: none;
   }
 }
@@ -56,17 +49,6 @@
   opacity: 0.6;
   cursor: pointer;
 }
-
-// @mixin animation($delay: 0.5s) {
-//   animation: animation 1s ease $delay 1 normal both running;
-//   opacity: 1;
-//   @keyframes animation {
-//     0% {
-//       transform: translate3d(0px, -1em, 0px);
-//       opacity: 0;
-//     }
-//   }
-// }
 
 @mixin border($color: black) {
   border: solid 2px $color;

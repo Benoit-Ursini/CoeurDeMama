@@ -35,8 +35,14 @@
             href="https://www.instagram.com/coeur_de_mama_/"
             target="_blank"
             class="fa fa-instagram"
+            title="Mon compte Instagram"
           ></a>
-          <a href="" target="_blank" class="fa fa-facebook"></a>
+          <a
+            href=""
+            target="_blank"
+            class="fa fa-facebook"
+            title="Mon compte Facbook"
+          ></a>
         </div>
         <div class="headerlogo headerlogo--desktop">
           <img
@@ -49,6 +55,7 @@
               class="headerlogo__img headerlogo__img--link"
               src="./images/logos/logo.svg"
               alt="Logo Coeur de mama"
+              title="Accueil - Coeur de mama"
             />
           </a>
           <img
@@ -68,6 +75,7 @@
             class="navlogo__img"
             src="./images/logos/logo.svg"
             alt="Logo Coeur de mama"
+            title="Accueil - Coeur de mama"
           />
           <p class="navlogo__title">Coeur de mama</p>
         </a>
@@ -77,113 +85,112 @@
           <i id="fermer" class="fas fa-times"></i>
         </div>
 
-        <script>
-          let toggle = document.querySelector(".navtoggle");
-          let body = document.querySelector("body");
-
-          toggle.addEventListener("click", function () {
-            body.classList.toggle("open");
-          });
-        </script>
-
         <ul class="navmenu">
           <li>
-            <a class="navmenu__link" href="./index.html">Accueil</a>
+            <a class="navmenu__link" href="./index.html" title="Accueil"
+              >Accueil</a
+            >
           </li>
           <li>
-            <a class="navmenu__link" href="./messervices.html">Mes services</a>
+            <a
+              class="navmenu__link"
+              href="./messervices.html"
+              title="Mes services"
+              >Mes services</a
+            >
           </li>
           <li>
-            <a class="navmenu__link" href="./monparcours.html">Mon parcours</a>
+            <a
+              class="navmenu__link"
+              href="./monparcours.html"
+              title="Mon parcours"
+              >Mon parcours</a
+            >
           </li>
           <li>
-            <a class="navmenu__link" href="./blog.html">Blog</a>
+            <a class="navmenu__link" href="./blog.html" title="Blog">Blog</a>
           </li>
           <!-- <li>
-            <a class="navmenu__link" href="./vosretours.html">Vos retours</a>
+            <a class="navmenu__link" href="./vosretours.html" title="Vos retours">Vos retours</a>
           </li> -->
           <li>
-            <a class="navmenu__link" href="./contact.php">Contact</a>
+            <a class="navmenu__link" href="./contact.php" title="Contact"
+              >Contact</a
+            >
           </li>
           <div class="navmenu--responsive">
             <a
               href="https://www.instagram.com/coeur_de_mama_/"
               target="_blank"
               class="fa fa-instagram"
+              title="Mon compte Instagram"
             ></a>
-            <a href="" target="_blank" class="fa fa-facebook"></a>
+            <a
+              href=""
+              target="_blank"
+              class="fa fa-facebook"
+              title="Mon compte Facbook"
+            ></a>
           </div>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1>Mes services & Tarifs</h1>
-      <section class="services reveal">
-        <div class="container-grid-cards reveal-2">
-          <a
-            class="cards"
-            href="./messervices/vers_une_naissance_physiologique.html"
-          >
-            <img
-              class="cards__img"
-              src="./images/services/naissance_physiologique.png"
-              alt=""
-            />
-            <h3 class="cards__title">Vers une naissance physiologie</h3>
-            <p class="cards__description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
-              atque rem dolor impedit veritatis laudantium voluptatum
-              reprehenderit sapiente corrupti vel eveniet totam quibusdam unde
-              doloremque tempora, autem cupiditate nam amet!
-            </p>
-          </a>
-          <a class="cards" href="./messervices/rdv_individuel.html">
-            <img
-              class="cards__img"
-              src="./images/services/rdv_individuel.png"
-              alt=""
-            />
-            <h3 class="cards__title">
-              RDV individuel <br />thématique précise
-            </h3>
-            <p class="cards__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              aperiam fugit deserunt ipsum obcaecati rerum dicta error eligendi
-              molestiae accusamus. Consequatur veniam, maiores vitae enim modi
-              vel nam doloribus quam.
-            </p>
-          </a>
-          <a class="cards" href="./messervices/masterclass_formations.php">
-            <img
-              class="cards__img"
-              src="./images/services/masterclass_formations.png"
-              alt=""
-            />
-            <h3 class="cards__title">Masterclass & Formations</h3>
-            <p class="cards__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quo
-              ut error, assumenda pariatur repellat quos impedit unde mollitia
-              ipsam modi. Porro doloribus est praesentium aut quod voluptas,
-              facere cupiditate.
-            </p>
-          </a>
-          <a class="cards" href="./messervices/presentiel.html">
-            <img
-              class="cards__img"
-              src="./images/services/presentiel.png"
-              alt=""
-            />
-            <h3 class="cards__title">En présentiel <br />Algarve (Portugal)</h3>
-            <p class="cards__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              quisquam voluptas unde sit consequatur eveniet perferendis
-              molestias nihil impedit cumque nostrum, laudantium enim minima
-              delectus possimus repudiandae rem quasi vitae.
-            </p>
-          </a>
-        </div>
+      <h1 id="up" class="reveal">Mes services & Tarifs</h1>
+      <section class="container-cards reveal-2">
+        <a
+          class="cards"
+          href="./messervices/vers_une_naissance_physiologique.html"
+          title="Vers une naissance physiologie"
+        >
+          <img
+            class="cards__img"
+            src="./images/services/naissance_physiologique.png"
+            alt=""
+          />
+          <h3 class="cards__title">Vers une naissance physiologie</h3>
+        </a>
+        <a
+          class="cards"
+          href="./messervices/rdv_individuel.html"
+          title="RDV individuel thématique précise"
+        >
+          <img
+            class="cards__img"
+            src="./images/services/rdv_individuel.png"
+            alt=""
+          />
+          <h3 class="cards__title">RDV individuel <br />thématique précise</h3>
+        </a>
+        <a
+          class="cards"
+          href="./messervices/masterclass_formations.html"
+          title="Masterclass & Formations"
+        >
+          <img
+            class="cards__img"
+            src="./images/services/masterclass_formations.png"
+            alt=""
+          />
+          <h3 class="cards__title">Masterclass & Formations</h3>
+        </a>
+        <a
+          class="cards"
+          href="./messervices/presentiel.html"
+          title="En présentiel (Algarve, Portugal)"
+        >
+          <img
+            class="cards__img"
+            src="./images/services/presentiel.png"
+            alt=""
+          />
+          <h3 class="cards__title">En présentiel <br />Algarve (Portugal)</h3>
+        </a>
       </section>
+      <a href="#up"
+        ><img class="arrow-up" src="./images/arrow-up.svg" alt="Arrow up"
+      /></a>
     </main>
 
     <footer class="footer">
@@ -192,10 +199,11 @@
           <a
             class="footer__link footer__link--title"
             href="./contact.php/#prendrerdv"
+            title="Prendre rendez-vous"
             >Prendre rendez-vous</a
           >
         </div>
-        <a href="index.html">
+        <a href="index.html" title="Accueil - Coeur de mama">
           <img
             class="headerlogo__img headerlogo__img--link"
             src="./images/logos/logo.svg"
@@ -204,7 +212,10 @@
         </a>
 
         <div class="footerblock">
-          <a class="footer__link footer__link--title" href="./contact.php"
+          <a
+            class="footer__link footer__link--title"
+            href="./contact.php"
+            title="Contactez-moi"
             >Contactez-moi</a
           >
           <div class="headernetwork">
@@ -212,14 +223,23 @@
               href="https://www.instagram.com/coeur_de_mama_/"
               target="_blank"
               class="fa fa-instagram"
+              title="Mon compte Instagram"
             ></a>
-            <a href="" target="_blank" class="fa fa-facebook"></a>
+            <a
+              href=""
+              target="_blank"
+              class="fa fa-facebook"
+              title="Mon compte Facebook"
+            ></a>
           </div>
         </div>
       </div>
 
       <p class="footer__text">
-        <a class="footer__link footer__link--small" href="./CGV.html"
+        <a
+          class="footer__link footer__link--small"
+          href="./CGV.html"
+          title="Mentions légales & CGV"
           >Mentions légales & CGV</a
         >
       </p>
@@ -229,10 +249,12 @@
           class="footer__link footer__link--small"
           href="http://benoit-ursini.com/"
           target="_blank"
+          title="Site de Benoit Ursini"
           >Benoit Ursini</a
         >
       </p>
     </footer>
+
     <script src="./script.js"></script>
   </body>
 </html>

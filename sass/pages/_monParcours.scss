@@ -1,0 +1,20 @@
+.mesFormations {
+  background: $color-article;
+  margin: 0;
+
+  &-before {
+    margin: 0;
+    padding-bottom: 3rem;
+    background-color: $color-bkgd;
+    position: relative;
+    z-index: 5;
+  }
+
+  &__heading {
+    position: relative;
+    z-index: 5;
+    margin: 0;
+    padding-bottom: 3rem;
+    background-color: $color-article;
+  }
+}

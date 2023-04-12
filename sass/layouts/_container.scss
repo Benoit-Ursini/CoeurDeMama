@@ -1,45 +1,70 @@
 .container {
-  &-grid {
-    &-cards {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 3rem;
-      padding-bottom: 2rem;
+  &-description {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 12rem;
 
-      @media screen and (max-width: $responsive-large) {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 4rem;
-        padding-top: 0;
-        gap: 4rem;
-      }
+    @media screen and (max-width: $responsive-large) {
+      padding: 0 6rem;
+    }
+    @media screen and (max-width: $responsive-laptop) {
+      padding: 0 3rem;
+    }
+    @media screen and (max-width: $responsive-tablet) {
+      flex-direction: column;
+    }
+
+    &--reverse {
       @media screen and (max-width: $responsive-tablet) {
-        grid-template-columns: 1fr;
+        flex-direction: column-reverse;
       }
     }
+
+    &__text {
+      width: 70%;
+
+      @media screen and (max-width: $responsive-tablet) {
+        width: 100%;
+      }
+    }
+
+    &__img {
+      object-fit: fill;
+    }
+  }
+
+  &-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3rem;
   }
 
   &-timeline {
     position: relative;
 
-    &-lines {
-      &-hidden {
+    &__lines {
+      &--hidden {
         width: 0.15rem;
         position: absolute;
         top: 0;
         bottom: 0;
         left: 50%;
         z-index: 2;
+
         @media screen and (max-width: $responsive-tablet) {
           display: none;
         }
       }
 
-      &-visible {
+      &--visible {
         background: $color-nav;
         border: 0.1rem solid $color-bkgd;
         position: absolute;
         top: 0;
-        height: 98%;
+        height: 99%;
         width: 100%;
         z-index: 1;
         @media screen and (max-width: $responsive-tablet) {
@@ -48,7 +73,7 @@
       }
     }
 
-    &-cursor {
+    &__cursor {
       width: 0.5rem;
       height: 0.5rem;
       border-radius: 100%;
@@ -66,42 +91,89 @@
     }
   }
 
-  &-formations {
+  &-withline {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 4rem;
-    @media screen and (max-width: $responsive-tablet) {
-      flex-direction: column;
+    @include font-simonetta;
+    @media screen and (max-width: $responsive-large) {
       padding: 4rem 0;
     }
-
-    &-first {
+    @media screen and (max-width: $responsive-tablet) {
+      flex-direction: column;
       padding-top: 0;
     }
 
-    &-even {
+    &--first {
+      padding-top: 0;
+    }
+
+    &--even {
       @media screen and (max-width: $responsive-tablet) {
         flex-direction: column-reverse;
       }
     }
 
-    &-text {
-      width: 40%;
-      font-family: "Simonetta", serif;
-      font-size: 1.3rem;
-      line-height: 1.7rem;
-      @media screen and (max-width: $responsive-tablet) {
-        width: 100%;
+    &--block {
+      @media screen and (min-width: $responsive-laptop) {
+        width: 40%;
+      }
+      @media screen and (min-width: $responsive-tablet) {
+        width: 45%;
       }
     }
 
-    &-img {
-      width: 40%;
+    &__title {
+      font-family: "Dancing Script", serif;
+      font-size: 2rem;
+      font-weight: bold;
+      color: $color-nav;
+      border-bottom: solid 2px $color-nav;
+      margin-bottom: 1rem;
+    }
+
+    &__img {
+      max-height: 370px;
+      object-fit: contain;
+      max-width: 100%;
       @media screen and (max-width: $responsive-tablet) {
-        width: 100%;
-        padding-top: 4rem;
+        padding-top: 2rem;
       }
     }
+
+    &__link {
+      color: $color-black;
+      @include font-link-p($color-bkgd);
+    }
+
+    &__list {
+      list-style-position: outside;
+    }
+
+    &__item {
+      text-align: left;
+      @include font-simonetta;
+    }
+
+    &__quiz {
+      @include font-nav;
+      line-height: 2rem;
+      margin-bottom: 4rem;
+      padding: 2rem 1rem;
+      background: $color-article;
+      box-shadow: 2px 2px 2px $color-nav;
+      @media screen and (min-width: $responsive-tablet) {
+        width: 60%;
+        margin: auto;
+      }
+    }
+  }
+
+  &-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
   }
 }

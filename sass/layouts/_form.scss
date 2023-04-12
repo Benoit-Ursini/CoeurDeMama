@@ -1,0 +1,33 @@
+.form {
+  &__input {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 3px;
+    font-family: "Simonetta", serif;
+    font-size: 1.2rem;
+    border: 0;
+    outline: none;
+  }
+
+  &:focus {
+    background-color: $color-bkgd;
+  }
+
+  &__button {
+    margin: 1rem;
+    background: $color-nav;
+    font-family: "Simonetta", serif;
+    font-size: 1.3rem;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 0.7rem 2rem;
+    border: 0;
+    outline: none;
+    border: 2px solid $color-nav;
+
+    &:hover {
+      background-color: $color-bkgd;
+      cursor: pointer;
+    }
+  }
+}

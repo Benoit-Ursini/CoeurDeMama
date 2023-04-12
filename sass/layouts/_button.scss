@@ -1,0 +1,99 @@
+.tarifs {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+  @media screen and (max-width: $responsive-tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &--section {
+    padding: 0 12rem;
+
+    @media screen and (max-width: $responsive-large) {
+      padding: 0 6rem;
+    }
+    @media screen and (max-width: $responsive-laptop) {
+      padding: 0 3rem;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    @include font-nav;
+    margin: 0 auto;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 10rem;
+    box-shadow: 2px 2px 5px $color-nav;
+
+    &--middle {
+      @media screen and (max-width: $responsive-tablet) {
+        margin: 2rem auto;
+      }
+    }
+
+    &:hover .tarifs__text--visible {
+      transition: transform 1.5s ease;
+      transform: translateX(-101%);
+    }
+  }
+
+  &__text {
+    border-radius: 50px;
+    padding: 1rem 2rem;
+
+    &--visible {
+      position: relative;
+      background: $color-article;
+      border: 2px solid $color-article;
+
+      z-index: 2;
+      transition: transform 1.5s ease;
+      transform: translateX(0%);
+
+      &--board {
+        background: $color-nav;
+        border: 2px solid $color-nav;
+      }
+    }
+
+    &--hidden {
+      position: absolute;
+      background: $color-nav;
+      border: 2px solid $color-article;
+      font-weight: bold;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      &--board {
+        background: $color-bkgd;
+        border: 2px solid $color-nav;
+      }
+    }
+  }
+
+  &__details {
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.2rem;
+
+    &--width {
+      margin: auto;
+      width: 90%;
+    }
+
+    &--board {
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__padding {
+    padding: 1rem 0;
+  }
+}

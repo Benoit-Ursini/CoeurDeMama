@@ -35,8 +35,14 @@
             href="https://www.instagram.com/coeur_de_mama_/"
             target="_blank"
             class="fa fa-instagram"
+            title="Mon compte Instagram"
           ></a>
-          <a href="" target="_blank" class="fa fa-facebook"></a>
+          <a
+            href=""
+            target="_blank"
+            class="fa fa-facebook"
+            title="Mon compte Facbook"
+          ></a>
         </div>
         <div class="headerlogo headerlogo--desktop">
           <img
@@ -49,6 +55,7 @@
               class="headerlogo__img headerlogo__img--link"
               src="./images/logos/logo.svg"
               alt="Logo Coeur de mama"
+              title="Accueil - Coeur de mama"
             />
           </a>
           <img
@@ -68,6 +75,7 @@
             class="navlogo__img"
             src="./images/logos/logo.svg"
             alt="Logo Coeur de mama"
+            title="Accueil - Coeur de mama"
           />
           <p class="navlogo__title">Coeur de mama</p>
         </a>
@@ -77,54 +85,65 @@
           <i id="fermer" class="fas fa-times"></i>
         </div>
 
-        <script>
-          let toggle = document.querySelector(".navtoggle");
-          let body = document.querySelector("body");
-
-          toggle.addEventListener("click", function () {
-            body.classList.toggle("open");
-          });
-        </script>
-
         <ul class="navmenu">
           <li>
-            <a class="navmenu__link" href="./index.html">Accueil</a>
+            <a class="navmenu__link" href="./index.html" title="Accueil"
+              >Accueil</a
+            >
           </li>
           <li>
-            <a class="navmenu__link" href="./messervices.html">Mes services</a>
+            <a
+              class="navmenu__link"
+              href="./messervices.html"
+              title="Mes services"
+              >Mes services</a
+            >
           </li>
           <li>
-            <a class="navmenu__link" href="./monparcours.html">Mon parcours</a>
+            <a
+              class="navmenu__link"
+              href="./monparcours.html"
+              title="Mon parcours"
+              >Mon parcours</a
+            >
           </li>
           <li>
-            <a class="navmenu__link" href="./blog.html">Blog</a>
+            <a class="navmenu__link" href="./blog.html" title="Blog">Blog</a>
           </li>
           <!-- <li>
-            <a class="navmenu__link" href="./vosretours.html">Vos retours</a>
+            <a class="navmenu__link" href="./vosretours.html" title="Vos retours">Vos retours</a>
           </li> -->
           <li>
-            <a class="navmenu__link" href="./contact.php">Contact</a>
+            <a class="navmenu__link" href="./contact.php" title="Contact"
+              >Contact</a
+            >
           </li>
           <div class="navmenu--responsive">
             <a
               href="https://www.instagram.com/coeur_de_mama_/"
               target="_blank"
               class="fa fa-instagram"
+              title="Mon compte Instagram"
             ></a>
-            <a href="" target="_blank" class="fa fa-facebook"></a>
+            <a
+              href=""
+              target="_blank"
+              class="fa fa-facebook"
+              title="Mon compte Facbook"
+            ></a>
           </div>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1 class="reveal">
+      <h1 id="up" class="reveal">
         Bienvenue par ici &#x1F496;<br />
         Je suis doula et coach périnatal, je t'accompagne à distance ou en
         Algarve
         <i class="em em-flag-pt" style="font-size: 1.5rem"></i>
       </h1>
-      <section class="home-quote reveal-2">
+      <section class="intro reveal-2">
         <q
           >T’accompagner et t’écouter, Te rappeler à quel point tu es forte et
           ton corps sait, Te soutenir dans ta vulnérabilité, T’apporter du
@@ -137,23 +156,17 @@
           rappeler, à quel point tu es puissante et douée, Toi qui enfantes
           l’humanité…
         </q>
-        <div class="home-quote-img">
-          <img
-            class="home-quote-img__img"
-            src="./images/accueil/accueil1.png"
-            alt=""
-          />
-        </div>
+        <img class="intro__img" src="./images/accueil/accueil1.png" alt="" />
       </section>
-      <section class="home-presentation reveal">
-        <div class="home-presentation-img">
-          <img
-            class="home-presentation-img__img"
-            src="./images/accueil/accueil2.png"
-            alt=""
-          />
-        </div>
-        <p>
+      <section
+        class="container-description container-description--reverse reveal"
+      >
+        <img
+          class="container-description__img"
+          src="./images/accueil/accueil2.png"
+          alt=""
+        />
+        <p class="container-description__text">
           Une des choses qui m’anime le plus en tant que doula, c’est d’informer
           les femmes et les couples.
           <br />
@@ -175,12 +188,13 @@
           grossesse, ton accouchement, ton post partum.
         </p>
       </section>
-      <article class="reveal">
+      <section class="section-color reveal">
         <h2>Mes services</h2>
-        <div class="container-grid-cards reveal-2">
+        <div class="container-cards reveal-2">
           <a
             class="cards"
             href="./messervices/vers_une_naissance_physiologique.html"
+            title="Vers une naissance physiologie"
           >
             <img
               class="cards__img"
@@ -189,7 +203,11 @@
             />
             <h3 class="cards__title">Vers une naissance physiologie</h3>
           </a>
-          <a class="cards" href="./messervices/rdv_individuel.html">
+          <a
+            class="cards"
+            href="./messervices/rdv_individuel.html"
+            title="RDV individuel thématique précise"
+          >
             <img
               class="cards__img"
               src="./images/services/rdv_individuel.png"
@@ -199,7 +217,11 @@
               RDV individuel <br />thématique précise
             </h3>
           </a>
-          <a class="cards" href="./messervices/masterclass_formations.php">
+          <a
+            class="cards"
+            href="./messervices/masterclass_formations.php"
+            title="Masterclass & Formations"
+          >
             <img
               class="cards__img"
               src="./images/services/masterclass_formations.png"
@@ -207,7 +229,11 @@
             />
             <h3 class="cards__title">Masterclass & Formations</h3>
           </a>
-          <a class="cards" href="./messervices/presentiel.html">
+          <a
+            class="cards"
+            href="./messervices/presentiel.html"
+            title="En présentiel (Algarve, Portugal)"
+          >
             <img
               class="cards__img"
               src="./images/services/presentiel.png"
@@ -216,7 +242,10 @@
             <h3 class="cards__title">En présentiel <br />Algarve (Portugal)</h3>
           </a>
         </div>
-      </article>
+      </section>
+      <a href="#up"
+        ><img class="arrow-up" src="./images/arrow-up.svg" alt="Arrow up"
+      /></a>
     </main>
 
     <footer class="footer">
@@ -225,10 +254,11 @@
           <a
             class="footer__link footer__link--title"
             href="./contact.php/#prendrerdv"
+            title="Prendre rendez-vous"
             >Prendre rendez-vous</a
           >
         </div>
-        <a href="index.html">
+        <a href="index.html" title="Accueil - Coeur de mama">
           <img
             class="headerlogo__img headerlogo__img--link"
             src="./images/logos/logo.svg"
@@ -237,7 +267,10 @@
         </a>
 
         <div class="footerblock">
-          <a class="footer__link footer__link--title" href="./contact.php"
+          <a
+            class="footer__link footer__link--title"
+            href="./contact.php"
+            title="Contactez-moi"
             >Contactez-moi</a
           >
           <div class="headernetwork">
@@ -245,14 +278,23 @@
               href="https://www.instagram.com/coeur_de_mama_/"
               target="_blank"
               class="fa fa-instagram"
+              title="Mon compte Instagram"
             ></a>
-            <a href="" target="_blank" class="fa fa-facebook"></a>
+            <a
+              href=""
+              target="_blank"
+              class="fa fa-facebook"
+              title="Mon compte Facebook"
+            ></a>
           </div>
         </div>
       </div>
 
       <p class="footer__text">
-        <a class="footer__link footer__link--small" href="./CGV.html"
+        <a
+          class="footer__link footer__link--small"
+          href="./CGV.html"
+          title="Mentions légales & CGV"
           >Mentions légales & CGV</a
         >
       </p>
@@ -262,6 +304,7 @@
           class="footer__link footer__link--small"
           href="http://benoit-ursini.com/"
           target="_blank"
+          title="Site de Benoit Ursini"
           >Benoit Ursini</a
         >
       </p>

@@ -2,10 +2,15 @@
 @import "./utils/mixins";
 @import "./base/base";
 @import "./layouts/container";
+@import "./layouts/button";
+
 @import "./layouts/header";
 @import "./layouts/nav";
 @import "./layouts/footer";
+@import "./layouts/form";
+
 @import "./pages/accueil";
-@import "./pages/services";
-@import "./pages/parcours";
+@import "./pages/mesServices";
+
+@import "./pages/monParcours";
 @import "./pages/contact";

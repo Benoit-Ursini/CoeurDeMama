@@ -1,50 +1,15 @@
-.home {
-  &-quote {
-    width: 60%;
-    margin: auto;
-    @media screen and (max-width: $responsive-laptop) {
-    }
+.intro {
+  padding: 0 12rem;
 
-    &-img {
-      margin: auto;
-      padding: 2rem;
-
-      &__img {
-        width: 100%;
-        object-fit: cover;
-        max-width: 500px;
-      }
-    }
+  @media screen and (max-width: $responsive-large) {
+    padding: 0 6rem;
+  }
+  @media screen and (max-width: $responsive-laptop) {
+    padding: 0 3rem;
   }
 
-  &-presentation {
-    display: flex;
-    align-items: center;
-    width: 70%;
-    margin: auto;
-    @media screen and (max-width: $responsive-large) {
-      width: 80%;
-    }
-    @media screen and (max-width: $responsive-laptop) {
-      flex-direction: column-reverse;
-    }
-
-    &-img {
-      padding: 2rem;
-      width: 70%;
-      @media screen and (max-width: $responsive-large) {
-        width: 100%;
-      }
-
-      &__img {
-        @media screen and (max-width: $responsive-laptop) {
-          width: 300px;
-        }
-
-        @media screen and (max-width: $responsive-phone) {
-          max-width: 200px;
-        }
-      }
-    }
+  &__img {
+    margin-top: 3rem;
+    max-width: 100%;
   }
 }
