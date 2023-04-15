@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="./images/logos/shortcut.png" />
-    <title>Coeur de mama - doula</title>
+    <title>Coeur de mama - Doula - Accueil</title>
     <meta name="description" content="" />
+    <meta name="keywords" content="" />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./styles.css" />
     <link
@@ -69,7 +70,7 @@
         </div>
       </div>
 
-      <nav class="nav">
+      <nav id="up" class="nav">
         <a class="navlogo" href="index.html">
           <img
             class="navlogo__img"
@@ -107,15 +108,22 @@
               >Mon parcours</a
             >
           </li>
-          <li>
+          <!-- <li>
             <a class="navmenu__link" href="./blog.html" title="Blog">Blog</a>
-          </li>
+          </li> -->
           <!-- <li>
             <a class="navmenu__link" href="./vosretours.html" title="Vos retours">Vos retours</a>
           </li> -->
           <li>
-            <a class="navmenu__link" href="./contact.php" title="Contact"
+            <a class="navmenu__link" href="./contact.html" title="Contact"
               >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.paypal.com/donate/?hosted_button_id=HWA8F7NUCMKMS"
+              class="navmenu__button"
+              >Faire un don</a
             >
           </li>
           <div class="navmenu--responsive">
@@ -137,10 +145,9 @@
     </header>
 
     <main>
-      <h1 id="up" class="reveal">
+      <h1 class="reveal">
         Bienvenue par ici &#x1F496;<br />
-        Je suis doula et coach périnatal, je t'accompagne à distance ou en
-        Algarve
+        Je suis doula et je t'accompagne à distance ou en Algarve
         <i class="em em-flag-pt" style="font-size: 1.5rem"></i>
       </h1>
       <section class="intro reveal-2">
@@ -156,7 +163,11 @@
           rappeler, à quel point tu es puissante et douée, Toi qui enfantes
           l’humanité…
         </q>
-        <img class="intro__img" src="./images/accueil/accueil1.png" alt="" />
+        <img
+          class="intro__img"
+          src="./images/accueil/accueil1.png"
+          alt="Photo d'un cercle de femmes"
+        />
       </section>
       <section
         class="container-description container-description--reverse reveal"
@@ -164,28 +175,33 @@
         <img
           class="container-description__img"
           src="./images/accueil/accueil2.png"
-          alt=""
+          alt="Photo de Coeur de mama sur plage au couché de soleil"
         />
         <p class="container-description__text">
-          Une des choses qui m’anime le plus en tant que doula, c’est d’informer
+          Une des choses qui m’anime le plus en tant que doula, c’est d’<strong
+            >informer</strong
+          >
           les femmes et les couples.
           <br />
           Je ne suis pas cette doula qui te dis de ne pas prendre de péridurale
           ou d’accoucher dans telle ou telle position. Non, je suis celle qui te
-          donne toutes les informations pour que tu fasses des choix réellement
-          éclairés.
+          donne <strong>toutes les informations</strong> pour que tu fasses des
+          <strong>choix réellement éclairés</strong>.
           <br />
           Je veux que quand tu te retrouves à la maternité, à la maison de
           naissance ou même dans ton salon au moment de ton accouchement, tu
-          sois pleinement souveraine et confiante.
+          sois <strong>pleinement souveraine et confiante</strong>.
           <br />
-          Que tu détiennes des techniques mais aussi des savoirs sur ta propre
-          physiologie, qui te permettent simplement de faire tes propres choix.
+          Que tu détiennes des <strong>techniques</strong> mais aussi des
+          <strong>savoirs</strong> sur ta propre physiologie, qui te permettent
+          simplement de faire tes propres choix.
           <br />
-          Alors aujourd’hui, grâce à mes compétences de doula, de coach
-          périnatal et surtout de maman, j’ai à cœur de t’accompagner dans ces
-          instants sacrés que tu vas vivre : la conception de ton enfant, ta
-          grossesse, ton accouchement, ton post partum.
+          Alors aujourd’hui, grâce à mes compétences de <strong>doula</strong>,
+          mes formations et aussi mon rôle de <strong>maman</strong>, j’ai à
+          cœur de t’accompagner dans ces instants sacrés que tu vas vivre : la
+          <strong>conception</strong> de ton enfant, ta
+          <strong>grossesse</strong>, ton <strong>accouchement</strong>, ton
+          <strong>post partum</strong>.
         </p>
       </section>
       <section class="section-color reveal">
@@ -199,7 +215,7 @@
             <img
               class="cards__img"
               src="./images/services/naissance_physiologique.png"
-              alt=""
+              alt="Photo d'une naissance physiologique dans une piscine"
             />
             <h3 class="cards__title">Vers une naissance physiologie</h3>
           </a>
@@ -211,7 +227,7 @@
             <img
               class="cards__img"
               src="./images/services/rdv_individuel.png"
-              alt=""
+              alt="Photo du ventre d'une femme enceinte"
             />
             <h3 class="cards__title">
               RDV individuel <br />thématique précise
@@ -219,13 +235,13 @@
           </a>
           <a
             class="cards"
-            href="./messervices/masterclass_formations.php"
+            href="./messervices/masterclass_formations.html"
             title="Masterclass & Formations"
           >
             <img
               class="cards__img"
               src="./images/services/masterclass_formations.png"
-              alt=""
+              alt="Photo d'une femme enceinte en tailleur"
             />
             <h3 class="cards__title">Masterclass & Formations</h3>
           </a>
@@ -237,14 +253,17 @@
             <img
               class="cards__img"
               src="./images/services/presentiel.png"
-              alt=""
+              alt="Photo d'une femme sur une plage ensoleillée"
             />
             <h3 class="cards__title">En présentiel <br />Algarve (Portugal)</h3>
           </a>
         </div>
       </section>
-      <a href="#up"
-        ><img class="arrow-up" src="./images/arrow-up.svg" alt="Arrow up"
+      <a href="#up" title="Retourner en haut du site"
+        ><img
+          class="arrow-up"
+          src="./images/arrow-up.svg"
+          alt="Flèche vers le haut"
       /></a>
     </main>
 
@@ -253,9 +272,9 @@
         <div class="footerblock">
           <a
             class="footer__link footer__link--title"
-            href="./contact.php/#prendrerdv"
+            href="./contact.php"
             title="Prendre rendez-vous"
-            >Prendre rendez-vous</a
+            >Contactez-moi</a
           >
         </div>
         <a href="index.html" title="Accueil - Coeur de mama">
@@ -266,13 +285,7 @@
           />
         </a>
 
-        <div class="footerblock">
-          <a
-            class="footer__link footer__link--title"
-            href="./contact.php"
-            title="Contactez-moi"
-            >Contactez-moi</a
-          >
+        <div class="footerblock footerblock--temporary">
           <div class="headernetwork">
             <a
               href="https://www.instagram.com/coeur_de_mama_/"
@@ -290,14 +303,14 @@
         </div>
       </div>
 
-      <p class="footer__text">
+      <!-- <p class="footer__text">
         <a
           class="footer__link footer__link--small"
           href="./CGV.html"
           title="Mentions légales & CGV"
           >Mentions légales & CGV</a
         >
-      </p>
+      </p> -->
       <p class="footer__text">
         Copyright &copy; 2023 | Coeur de mama | Created by
         <a

@@ -5,10 +5,10 @@
   font-weight: 400;
 }
 
-@mixin font-nav {
+@mixin font-title($color: $color-black) {
   font-family: "Simonetta", serif;
   font-size: 1.5rem;
-  color: $color-black;
+  color: $color;
 }
 
 @mixin font-heading {
@@ -18,11 +18,6 @@
   font-weight: bold;
   padding: 3rem 3rem 0 3rem;
   margin-bottom: 3rem;
-}
-
-@mixin font-title {
-  font-family: "Simonetta", serif;
-  font-size: 1.5rem;
 }
 
 @mixin font-text {
@@ -37,7 +32,12 @@
   line-height: 2rem;
 }
 
-@mixin font-link-p($underline: $color-section, $color-hover: $color-bkgd) {
+@mixin font-link-p(
+  $color: $color-black,
+  $underline: $color-article,
+  $color-hover: $color-bkgd
+) {
+  color: $color;
   text-decoration: underline $underline;
   &:hover {
     color: $color-hover;

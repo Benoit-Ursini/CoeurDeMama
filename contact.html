@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+<?php
+session_start();
+?><!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="./images/logos/shortcut.png" />
-    <title>Coeur de mama - Doula en ligne & en Algarve - Mes services</title>
+    <title>Coeur de mama - Doula en ligne & en Algarve - Contact</title>
     <meta name="description" content="" />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./styles.css" />
@@ -144,62 +146,118 @@
     </header>
 
     <main>
-      <h1 class="reveal">Mes services & Tarifs</h1>
-      <section class="container-cards reveal-2">
-        <a
-          class="cards"
-          href="./messervices/vers_une_naissance_physiologique.html"
-          title="Vers une naissance physiologie"
-        >
+      <h1 class="reveal">Contactez-moi</h1>
+      <?php if(array_key_exists('errors', $_SESSION)): ?>
+      <div class="form__message form__message--errors">
+        <?= implode('<br>', $_SESSION['errors']); ?>
+      </div>
+      <?php endif; ?>
+      <?php if(array_key_exists('success', $_SESSION)): ?>
+      <div class="form__message form__message--success">
+        Votre email a bien été envoyé &#128521;
+      </div>
+      <?php endif; ?>
+
+      <section class="container-description">
+        <div class="container-withline--block reveal-2">
           <img
-            class="cards__img"
-            src="./images/services/naissance_physiologique.png"
-            alt="Photo d'une naissance physiologique dans une piscine"
+            class="contact__img"
+            src="./images/parcours/presentation1.png"
+            alt=""
           />
-          <h3 class="cards__title">Vers une naissance physiologie</h3>
-        </a>
-        <a
-          class="cards"
-          href="./messervices/rdv_individuel.html"
-          title="RDV individuel thématique précise"
+          <h3 class="contact__name">Sara Ursini Bouziane</h3>
+          <p>Vila do Bispo, Algarve, Portugal</p>
+          <a class="contact__link" href="tel:+33635105536"
+            >(+33) 06 35 10 55 36</a
+          >
+          <a class="contact__link" href="mailto:sara.coeurdemama@gmail.com"
+            >sara.coeurdemama@gmail.com</a
+          >
+          <div class="headernetwork">
+            <a
+              href="https://www.instagram.com/coeur_de_mama_/"
+              target="_blank"
+              class="fa fa-instagram"
+              title="Mon compte Instagram"
+            ></a>
+            <a
+              href=""
+              target="_blank"
+              class="fa fa-facebook"
+              title="Mon compte Facebook"
+            ></a>
+          </div>
+        </div>
+        <form
+          class="container-withline--block form-contact reveal-2"
+          action="./php/post_contact.php"
+          method="POST"
         >
-          <img
-            class="cards__img"
-            src="./images/services/rdv_individuel.png"
-            alt="Photo du ventre d'une femme enceinte"
-          />
-          <h3 class="cards__title">RDV individuel <br />thématique précise</h3>
-        </a>
-        <a
-          class="cards"
-          href="./messervices/masterclass_formations.html"
-          title="Masterclass & Formations"
-        >
-          <img
-            class="cards__img"
-            src="./images/services/masterclass_formations.png"
-            alt="Photo d'une femme enceinte assise en tailleur"
-          />
-          <h3 class="cards__title">Masterclass & Formations</h3>
-        </a>
-        <a
-          class="cards"
-          href="./messervices/presentiel.html"
-          title="En présentiel (Algarve, Portugal)"
-        >
-          <img
-            class="cards__img"
-            src="./images/services/presentiel.png"
-            alt="Photo d'une femme sur une plage ensoleillée"
-          />
-          <h3 class="cards__title">En présentiel <br />Algarve (Portugal)</h3>
-        </a>
+          <div class="form-contact--user">
+            <input
+              class="form-contact__input"
+              type="text"
+              name="name"
+              inputmode="text"
+              required
+              value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?>"
+            /><label class="form-contact__label form-contact__label--animation"
+              >Prénom Nom</label
+            >
+          </div>
+          <div class="form-contact--user">
+            <input
+              class="form-contact__input"
+              type="tel"
+              name="tel"
+              inputmode="tel"
+              required
+              value="<?= isset($_SESSION['inputs']['tel']) ? $_SESSION['inputs']['tel'] : ''; ?>"
+            /><label class="form-contact__label form-contact__label--animation"
+              >Tel</label
+            >
+          </div>
+          <div class="form-contact--user">
+            <input
+              class="form-contact__input"
+              type="email"
+              name="email"
+              inputmode="text"
+              required
+              value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : ''; ?>"
+            /><label class="form-contact__label form-contact__label--animation"
+              >Email</label
+            >
+          </div>
+          <div class="form-contact--user">
+            <select class="form-contact__input" name="object" required>
+              <option selected></option>
+              <option value="0">Vers une naissance physiologique</option>
+              <option value="1">RDV individuel thématique précise</option>
+              <option value="2">Masterclass & Formations</option>
+              <option value="3">Présentiel</option>
+              <option value="4">Renseignements</option>
+              <option value="5">Autre</option></select
+            ><label class="form-contact__label">Objet de votre message</label>
+          </div>
+          <div class="form-contact--user">
+            <label class="form-contact__label">Mon message</label>
+            <textarea
+              class="form-contact__input"
+              name="message"
+              rows="7"
+              inputmode="text"
+              required
+            >
+<?= isset($_SESSION['inputs']['message']) ? $_SESSION['inputs']['message'] : ''; ?></textarea
+            >
+          </div>
+          <button class="form-contact__button" type="submit">Envoyer</button>
+        </form>
       </section>
-      <a href="#up" title="Retourner en haut du site"
-        ><img
-          class="arrow-up"
-          src="./images/arrow-up.svg"
-          alt="Flèche vers le haut"
+
+      <a href="#up"
+        ><img class="arrow-up" src="./images/arrow-up.svg" alt="Arrow up"
       /></a>
     </main>
 
@@ -262,3 +320,9 @@
     <script src="./script.js"></script>
   </body>
 </html>
+
+<?php
+unset($_SESSION['inputs']);
+unset($_SESSION['success']);
+unset($_SESSION['errors']);
+?>

@@ -21,13 +21,17 @@
       width: 100%;
       padding-top: 2rem;
     }
+
+    &--temporary {
+      padding-top: 2.5rem;
+    }
   }
 
   &__link {
     color: $color-black;
 
     &--title {
-      @include font-nav;
+      @include font-title;
       font-weight: bold;
       position: relative;
 

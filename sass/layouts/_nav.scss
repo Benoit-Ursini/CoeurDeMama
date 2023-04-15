@@ -35,7 +35,7 @@
     }
 
     &__title {
-      @include font-nav;
+      @include font-title;
     }
   }
 
@@ -70,14 +70,14 @@
     }
 
     &__link {
-      @include font-nav;
+      @include font-title;
       height: $height-nav;
       display: flex;
       align-items: center;
       padding: 0 1rem;
       @media screen and (max-width: $responsive-laptop) {
         box-sizing: border-box;
-        font-size: 2rem;
+        font-size: 4rem;
         width: 100%;
         justify-content: center;
       }
@@ -92,13 +92,35 @@
       }
     }
 
+    &__button {
+      font-family: "Simonetta", serif;
+      font-weight: bold;
+      font-size: 1rem;
+      color: $color-white;
+      text-transform: uppercase;
+      padding: 0.5rem 1.5rem;
+      border-radius: 30px;
+      background: $color-article;
+      box-sizing: border-box;
+      @media screen and (max-width: $responsive-laptop) {
+        font-size: 3rem;
+        padding: 1rem 4rem;
+        border-radius: 50px;
+      }
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-black;
+      }
+    }
+
     &--responsive {
       display: none;
       @media screen and (max-width: $responsive-laptop) {
         box-sizing: border-box;
         display: flex;
         gap: 3rem;
-        font-size: 3rem;
+        font-size: 5rem;
       }
     }
   }

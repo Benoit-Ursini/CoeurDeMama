@@ -1,0 +1,18 @@
+.contact {
+  &__img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  &__name {
+    @include font-logo;
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    display: block;
+    @include font-text;
+    @include font-link-p($color-black, $color-bkgd, $color-article);
+  }
+}

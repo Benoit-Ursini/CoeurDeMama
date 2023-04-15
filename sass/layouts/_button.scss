@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   margin: 3rem 0;
-  @media screen and (max-width: $responsive-tablet) {
+  @media screen and (max-width: $responsive-laptop) {
     flex-direction: column;
     align-items: center;
   }
@@ -22,7 +22,7 @@
     display: inline-block;
     position: relative;
     cursor: pointer;
-    @include font-nav;
+    @include font-title;
     margin: 0 auto;
     border-radius: 50px;
     overflow: hidden;
@@ -30,7 +30,7 @@
     box-shadow: 2px 2px 5px $color-nav;
 
     &--middle {
-      @media screen and (max-width: $responsive-tablet) {
+      @media screen and (max-width: $responsive-laptop) {
         margin: 2rem auto;
       }
     }
@@ -62,7 +62,7 @@
 
     &--hidden {
       position: absolute;
-      background: $color-nav;
+      background: $color-white;
       border: 2px solid $color-article;
       font-weight: bold;
       z-index: 1;

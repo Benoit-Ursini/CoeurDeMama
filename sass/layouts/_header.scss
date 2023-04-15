@@ -52,6 +52,10 @@
   height: 2rem;
   text-align: center;
   color: $color-black;
+  @media screen and (max-width: $responsive-laptop) {
+    width: 5rem;
+    height: 5rem;
+  }
 
   &:hover {
     cursor: pointer;

@@ -11,13 +11,11 @@
     }
     @media screen and (max-width: $responsive-laptop) {
       padding: 0 3rem;
-    }
-    @media screen and (max-width: $responsive-tablet) {
       flex-direction: column;
     }
 
     &--reverse {
-      @media screen and (max-width: $responsive-tablet) {
+      @media screen and (max-width: $responsive-laptop) {
         flex-direction: column-reverse;
       }
     }
@@ -25,7 +23,7 @@
     &__text {
       width: 70%;
 
-      @media screen and (max-width: $responsive-tablet) {
+      @media screen and (max-width: $responsive-laptop) {
         width: 100%;
       }
     }
@@ -54,7 +52,7 @@
         left: 50%;
         z-index: 2;
 
-        @media screen and (max-width: $responsive-tablet) {
+        @media screen and (max-width: $responsive-laptop) {
           display: none;
         }
       }
@@ -67,7 +65,7 @@
         height: 99%;
         width: 100%;
         z-index: 1;
-        @media screen and (max-width: $responsive-tablet) {
+        @media screen and (max-width: $responsive-laptop) {
           display: none;
         }
       }
@@ -85,7 +83,7 @@
       margin-left: -0.25rem;
       transform: translateY(4em);
       z-index: 3;
-      @media screen and (max-width: $responsive-tablet) {
+      @media screen and (max-width: $responsive-laptop) {
         display: none;
       }
     }
@@ -100,7 +98,7 @@
     @media screen and (max-width: $responsive-large) {
       padding: 4rem 0;
     }
-    @media screen and (max-width: $responsive-tablet) {
+    @media screen and (max-width: $responsive-laptop) {
       flex-direction: column;
       padding-top: 0;
     }
@@ -110,7 +108,7 @@
     }
 
     &--even {
-      @media screen and (max-width: $responsive-tablet) {
+      @media screen and (max-width: $responsive-laptop) {
         flex-direction: column-reverse;
       }
     }
@@ -118,9 +116,6 @@
     &--block {
       @media screen and (min-width: $responsive-laptop) {
         width: 40%;
-      }
-      @media screen and (min-width: $responsive-tablet) {
-        width: 45%;
       }
     }
 
@@ -137,14 +132,13 @@
       max-height: 370px;
       object-fit: contain;
       max-width: 100%;
-      @media screen and (max-width: $responsive-tablet) {
+      @media screen and (max-width: $responsive-laptop) {
         padding-top: 2rem;
       }
     }
 
     &__link {
-      color: $color-black;
-      @include font-link-p($color-bkgd);
+      @include font-link-p($color-black, $color-bkgd);
     }
 
     &__list {
@@ -157,13 +151,13 @@
     }
 
     &__quiz {
-      @include font-nav;
+      @include font-title;
       line-height: 2rem;
       margin-bottom: 4rem;
       padding: 2rem 1rem;
       background: $color-article;
       box-shadow: 2px 2px 2px $color-nav;
-      @media screen and (min-width: $responsive-tablet) {
+      @media screen and (min-width: $responsive-laptop) {
         width: 60%;
         margin: auto;
       }

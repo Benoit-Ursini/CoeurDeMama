@@ -42,6 +42,10 @@ q {
   quotes: "“ " " „";
 }
 
+strong {
+  font-weight: bold;
+}
+
 .list {
   list-style-position: inside;
 
@@ -87,16 +91,22 @@ q {
 }
 
 [class*="quiz"] {
-  opacity: 0;
-  transform: translateX(-100%);
+  @media screen and (min-width: $responsive-laptop) {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 }
 
 .reveal-quiz {
-  opacity: 1;
-  transform: translateX(0%);
-  transition: 1s;
+  @media screen and (min-width: $responsive-laptop) {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: 1s;
+  }
 }
 
 .quiz-1 {
-  transition-delay: 1s;
+  @media screen and (min-width: $responsive-laptop) {
+    transition-delay: 1s;
+  }
 }

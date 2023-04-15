@@ -1,33 +1,120 @@
 .form {
-  &__input {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    border-radius: 3px;
-    font-family: "Simonetta", serif;
-    font-size: 1.2rem;
-    border: 0;
-    outline: none;
+  &__message {
+    width: 50%;
+    height: 4vh;
+    @include font-simonetta;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 5px;
+
+    &--errors {
+      background: #ffc7ce;
+      color: #9c0006;
+      border: solid 1px #9c0006;
+    }
+
+    &--success {
+      background: #c6efce;
+      color: #006100;
+      border: solid 1px #006100;
+    }
   }
 
-  &:focus {
-    background-color: $color-bkgd;
+  &-subscrite {
+    &__input {
+      margin: 0.5rem;
+      padding: 0.5rem;
+      border-radius: 3px;
+      font-family: "Simonetta", serif;
+      font-size: 1.2rem;
+      border: 0;
+      outline: none;
+      background-color: $color-white;
+
+      &:focus {
+        outline: groove 2px $color-nav;
+        color: $color-nav;
+      }
+    }
+
+    &__button {
+      margin: 1rem;
+      background: $color-nav;
+      font-family: "Simonetta", serif;
+      font-size: 1.3rem;
+      display: inline-block;
+      border-radius: 30px;
+      padding: 0.7rem 2rem;
+      border: 0;
+      outline: none;
+      border: 2px solid $color-nav;
+
+      &:hover {
+        background-color: $color-bkgd;
+        cursor: pointer;
+      }
+    }
   }
 
-  &__button {
-    margin: 1rem;
-    background: $color-nav;
-    font-family: "Simonetta", serif;
-    font-size: 1.3rem;
-    display: inline-block;
-    border-radius: 30px;
-    padding: 0.7rem 2rem;
-    border: 0;
-    outline: none;
-    border: 2px solid $color-nav;
+  &-contact {
+    border: solid 0.1rem $color-nav;
+    border-radius: 10px;
+    background: $color-white;
+    padding: 0 1rem;
 
-    &:hover {
-      background-color: $color-bkgd;
-      cursor: pointer;
+    &--user {
+      position: relative;
+      padding: 1rem 0;
+    }
+
+    &__input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 0.1rem solid $color-nav;
+      font-size: 1.2rem;
+      padding: 0.7rem 0;
+      display: block;
+      width: 100%;
+      outline: none;
+      font-family: "Open sans", sans-serif;
+
+      &:focus + .form-contact__label,
+      &:valid + .form-contact__label {
+        transform: translateY(0);
+      }
+    }
+
+    &__label {
+      font-family: "Simonetta", serif;
+      color: $color-nav;
+      font-size: 1.3rem;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      &--animation {
+        transform: translateY(30px);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    &__button {
+      margin: 1rem;
+      background: $color-nav;
+      font-family: "Simonetta", serif;
+      font-size: 1.3rem;
+      display: inline-block;
+      border-radius: 30px;
+      padding: 0.7rem 2rem;
+      border: 0;
+      outline: none;
+      border: 2px solid $color-nav;
+
+      &:hover {
+        background-color: $color-bkgd;
+        cursor: pointer;
+      }
     }
   }
 }

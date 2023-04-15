@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="../images/logos/shortcut.png" />
-    <title>Coeur de mama - doula</title>
+    <title>Coeur de mama - Doula - Masterclass & Formations</title>
     <meta name="description" content="" />
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="../styles.css" />
@@ -69,7 +69,7 @@
         </div>
       </div>
 
-      <nav class="nav">
+      <nav id="up" class="nav">
         <a class="navlogo" href="index.html">
           <img
             class="navlogo__img"
@@ -107,15 +107,22 @@
               >Mon parcours</a
             >
           </li>
-          <li>
+          <!-- <li>
             <a class="navmenu__link" href="../blog.html" title="Blog">Blog</a>
-          </li>
+          </li> -->
           <!-- <li>
             <a class="navmenu__link" href="../vosretours.html" title="Vos retours">Vos retours</a>
           </li> -->
           <li>
             <a class="navmenu__link" href="../contact.php" title="Contact"
               >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.paypal.com/donate/?hosted_button_id=HWA8F7NUCMKMS"
+              class="navmenu__button"
+              >Faire un don</a
             >
           </li>
           <div class="navmenu--responsive">
@@ -137,12 +144,12 @@
     </header>
 
     <main>
-      <h1 id="up" class="reveal">Masterclass et formations</h1>
+      <h1 class="reveal">Masterclass et formations</h1>
       <section class="container-description">
         <img
           class="container-description__img reveal-2"
           src="../images/services/masterclass_formations.png"
-          alt=""
+          alt="Photo d'une femme enceinte assise en tailleur"
         />
         <div class="container-description__text">
           <p class="reveal-2">
@@ -155,17 +162,11 @@
             A la fin de chaque masterclass, les participantes reçoivent un
             document pdf reprenant tout ce qui a été dit !
           </p>
-          <div class="tarifs reveal-3">
-            <div class="tarifs__btn">
-              <div class="tarifs__text tarifs__text--visible">Tarif</div>
-              <div class="tarifs__text tarifs__text--hidden">23 €</div>
-            </div>
-          </div>
+          <h2 class="reveal-3">Tarif libre et conscient</h2>
           <div class="reveal-4">
             <p class="tarifs__details tarifs__details-width">
-              Si tu aimerais vraiment te faire accompagner mais que l’argent est
-              un frein pour sauter le pas, n’hésite pas à me contacter : on peut
-              toujours trouver des solutions ensemble
+              Un montant de base te sera proposé mais le versement sera libre et
+              conscient en fonction de tes possibilités
             </p>
             <p>&#x1F496;</p>
           </div>
@@ -176,16 +177,18 @@
           <h3 class="board__title">Accouchement physiologique</h3>
           <img
             class="board__img"
-            src="../images/services/masterclass_formations.png"
-            alt=""
+            src="../images/services/masterclass_physio.png"
+            alt="Photo noir et blanc d'un accouchement physiologique dans une piscine"
           />
           <ul class="list board__list">
-            <li class="list__item">Qu’est-ce qu’un accouchement physio ?</li>
+            <li class="list__item">
+              Qu’est-ce qu’un accouchement physiologique ?
+            </li>
             <li class="list__item">
               Pourquoi vouloir vivre un accouchement physiologique ?
             </li>
             <li class="list__item">
-              Petit tour rapide des étapes de l’accouchement physio.
+              Petit tour rapide des étapes de l’accouchement physiologique.
             </li>
             <li class="list__item">
               Choix du lieu de naissance : quel impact sur mon projet
@@ -194,28 +197,23 @@
           </ul>
           <p class="board__inscription">
             Tu veux rester informée sur la prochaine session ?
+            <br />
+            Suis-moi sur les réseaux sociaux :
           </p>
-          <form class="form" action="" method="POST">
-            <div>
-              <input
-                class="form__input"
-                type="text"
-                name="name"
-                placeholder="Nom"
-                inputmode="text"
-                required
-              />
-              <input
-                class="form__input"
-                type="email"
-                name="email"
-                placeholder="exemple@gmail.com"
-                inputmode="email"
-                required
-              />
-            </div>
-            <button class="form__button" type="submit">S'inscrire</button>
-          </form>
+          <div class="headernetwork">
+            <a
+              href="https://www.instagram.com/coeur_de_mama_/"
+              target="_blank"
+              class="fa fa-instagram"
+              title="Mon compte Instagram"
+            ></a>
+            <a
+              href=""
+              target="_blank"
+              class="fa fa-facebook"
+              title="Mon compte Facebook"
+            ></a>
+          </div>
         </article>
         <article class="board reveal">
           <h3 class="board__title">
@@ -223,8 +221,8 @@
           </h3>
           <img
             class="board__img"
-            src="../images/services/masterclass_formations.png"
-            alt=""
+            src="../images/services/allaitement.png"
+            alt="Photo d'une femme allaitant son bébé"
           />
           <ul class="list board__list">
             <li class="list__item">Pourquoi allaiter son bébé ?</li>
@@ -232,7 +230,7 @@
               Comment favoriser la mise en place de mon allaitement dès la
               naissance ?
             </li>
-            <li class="list__item">Peut on allaiter malgré une césarienne ?</li>
+            <li class="list__item">Peut-on allaiter malgré une césarienne ?</li>
             <li class="list__item">
               Quels sont les recommandations en matière d’allaitement ?
             </li>
@@ -242,40 +240,35 @@
           </ul>
           <p class="board__inscription">
             Tu veux rester informée sur la prochaine session ?
+            <br />
+            Suis-moi sur les réseaux sociaux :
           </p>
-          <form class="form" action="" method="POST">
-            <div>
-              <input
-                class="form__input"
-                type="text"
-                name="name"
-                placeholder="Nom"
-                inputmode="text"
-                required
-              />
-              <input
-                class="form__input"
-                type="email"
-                name="email"
-                placeholder="exemple@gmail.com"
-                inputmode="email"
-                required
-              />
-            </div>
-            <button class="form__button" type="submit">S'inscrire</button>
-          </form>
+          <div class="headernetwork">
+            <a
+              href="https://www.instagram.com/coeur_de_mama_/"
+              target="_blank"
+              class="fa fa-instagram"
+              title="Mon compte Instagram"
+            ></a>
+            <a
+              href=""
+              target="_blank"
+              class="fa fa-facebook"
+              title="Mon compte Facebook"
+            ></a>
+          </div>
         </article>
         <article class="board reveal">
           <h3 class="board__title">Vers un post partum serein</h3>
           <img
             class="board__img"
-            src="../images/services/masterclass_formations.png"
-            alt=""
+            src="../images/services/post_partum.png"
+            alt="Photo d'une femme faisant un bisou sur le front de son bébé"
           />
           <ul class="list board__list">
-            <li class="list__item">Qu’est ce que le post partum ?</li>
+            <li class="list__item">Qu’est-ce que le post partum ?</li>
             <li class="list__item">
-              Baby blues VS depression post partum, clarifions tout ça
+              Baby blues VS dépression post partum, clarifions tout ça ...
             </li>
             <li class="list__item">
               Tips et astuces pour préparer son post partum
@@ -283,41 +276,38 @@
           </ul>
           <p class="board__inscription">
             Tu veux rester informée sur la prochaine session ?
+            <br />
+            Suis-moi sur les réseaux sociaux :
           </p>
-          <form class="form" action="" method="POST">
-            <div>
-              <input
-                class="form__input"
-                type="text"
-                name="name"
-                placeholder="Nom"
-                inputmode="text"
-                required
-              />
-              <input
-                class="form__input"
-                type="email"
-                name="email"
-                placeholder="exemple@gmail.com"
-                inputmode="email"
-                required
-              />
-            </div>
-            <button class="form__button" type="submit">S'inscrire</button>
-          </form>
+          <div class="headernetwork">
+            <a
+              href="https://www.instagram.com/coeur_de_mama_/"
+              target="_blank"
+              class="fa fa-instagram"
+              title="Mon compte Instagram"
+            ></a>
+            <a
+              href=""
+              target="_blank"
+              class="fa fa-facebook"
+              title="Mon compte Facebook"
+            ></a>
+          </div>
         </article>
         <article class="board reveal">
-          <h3 class="board__title">A venir ...</h3>
+          <h3 class="board__title">
+            D'autres formations & masterclass sont à venir ...
+          </h3>
           <img
             class="board__img"
-            src="../images/services/masterclass_formations.png"
-            alt=""
+            src="../images/services/a-venir.jpg"
+            alt="Photo d'une doula avec un fuzeau"
           />
 
           <p class="board__inscription">
             Tu veux rester informée sur les prochains programmes ?
             <br />
-            Suis-moi sur les réseaux sociaux
+            Suis-moi sur les réseaux sociaux :
           </p>
           <div class="headernetwork">
             <a
@@ -335,8 +325,11 @@
           </div>
         </article>
       </section>
-      <a href="#up"
-        ><img class="arrow-up" src="../images/arrow-up.svg" alt="Arrow up"
+      <a href="#up" title="Retourner en haut du site"
+        ><img
+          class="arrow-up"
+          src="../images/arrow-up.svg"
+          alt="Flèche vers le haut"
       /></a>
     </main>
 
@@ -345,9 +338,9 @@
         <div class="footerblock">
           <a
             class="footer__link footer__link--title"
-            href="../contact.php/#prendrerdv"
+            href="../contact.php"
             title="Prendre rendez-vous"
-            >Prendre rendez-vous</a
+            >Contactez-moi</a
           >
         </div>
         <a href="index.html" title="Accueil - Coeur de mama">
@@ -358,13 +351,7 @@
           />
         </a>
 
-        <div class="footerblock">
-          <a
-            class="footer__link footer__link--title"
-            href="../contact.php"
-            title="Contactez-moi"
-            >Contactez-moi</a
-          >
+        <div class="footerblock footerblock--temporary">
           <div class="headernetwork">
             <a
               href="https://www.instagram.com/coeur_de_mama_/"
@@ -382,14 +369,14 @@
         </div>
       </div>
 
-      <p class="footer__text">
+      <!-- <p class="footer__text">
         <a
           class="footer__link footer__link--small"
           href="../CGV.html"
           title="Mentions légales & CGV"
           >Mentions légales & CGV</a
         >
-      </p>
+      </p> -->
       <p class="footer__text">
         Copyright &copy; 2023 | Coeur de mama | Created by
         <a
