@@ -39,7 +39,7 @@
 
     &__button {
       margin: 1rem;
-      background: $color-nav;
+      background: $color-article;
       font-family: "Simonetta", serif;
       font-size: 1.3rem;
       display: inline-block;
@@ -47,7 +47,7 @@
       padding: 0.7rem 2rem;
       border: 0;
       outline: none;
-      border: 2px solid $color-nav;
+      border: 2px solid $color-article;
 
       &:hover {
         background-color: $color-bkgd;
@@ -101,7 +101,7 @@
 
     &__button {
       margin: 1rem;
-      background: $color-nav;
+      background: $color-article;
       font-family: "Simonetta", serif;
       font-size: 1.3rem;
       display: inline-block;
@@ -109,10 +109,10 @@
       padding: 0.7rem 2rem;
       border: 0;
       outline: none;
-      border: 2px solid $color-nav;
+      border: 2px solid $color-article;
 
       &:hover {
-        background-color: $color-bkgd;
+        background-color: $color-white;
         cursor: pointer;
       }
     }

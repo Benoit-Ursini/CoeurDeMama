@@ -36,6 +36,9 @@
 
     &__title {
       @include font-title;
+      @media screen and (max-width: $responsive-laptop) {
+        font-size: 3rem;
+      }
     }
   }
 
@@ -43,7 +46,7 @@
     display: none;
     @media screen and (max-width: $responsive-laptop) {
       display: block;
-      font-size: 2rem;
+      font-size: 4rem;
       cursor: pointer;
       position: relative;
       z-index: 20;
@@ -93,15 +96,23 @@
     }
 
     &__button {
+      display: inline-block;
       font-family: "Simonetta", serif;
       font-weight: bold;
-      font-size: 1rem;
-      color: $color-white;
+      font-size: 0.9rem;
+      color: $color-black;
       text-transform: uppercase;
       padding: 0.5rem 1.5rem;
       border-radius: 30px;
-      background: $color-article;
+      background: linear-gradient(
+        45deg,
+        rgba(240, 240, 234, 1) 0%,
+        rgba(240, 198, 193, 1) 30%,
+        rgba(240, 198, 193, 1) 70%,
+        rgba(240, 240, 234, 1) 100%
+      );
       box-sizing: border-box;
+      transition: all 0.5s ease;
       @media screen and (max-width: $responsive-laptop) {
         font-size: 3rem;
         padding: 1rem 4rem;
@@ -109,8 +120,8 @@
       }
 
       &:hover {
-        background-color: $color-white;
-        color: $color-black;
+        transform: scale(1.2);
+        transition: all 0.5s ease;
       }
     }
 

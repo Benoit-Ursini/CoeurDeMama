@@ -34,6 +34,9 @@
       @include font-title;
       font-weight: bold;
       position: relative;
+      @media screen and (max-width: $responsive-laptop) {
+        font-size: 3rem;
+      }
 
       &::after {
         position: absolute;

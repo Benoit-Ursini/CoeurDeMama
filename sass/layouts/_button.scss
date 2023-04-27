@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   margin: 3rem 0;
-  @media screen and (max-width: $responsive-laptop) {
+  @media screen and (max-width: $responsive-tablet) {
     flex-direction: column;
     align-items: center;
   }
@@ -19,40 +19,34 @@
   }
 
   &__btn {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
+    display: flex;
     @include font-title;
     margin: 0 auto;
-    border-radius: 50px;
-    overflow: hidden;
-    width: 10rem;
-    box-shadow: 2px 2px 5px $color-nav;
-
-    &--middle {
-      @media screen and (max-width: $responsive-laptop) {
-        margin: 2rem auto;
-      }
+    border-radius: 5px;
+    background: linear-gradient(
+      90deg,
+      rgba(206, 161, 151, 1) 0%,
+      rgba(240, 198, 193, 1) 100%
+    );
+    @media screen and (max-width: $responsive-laptop) {
+      font-size: 2rem;
     }
 
-    &:hover .tarifs__text--visible {
-      transition: transform 1.5s ease;
-      transform: translateX(-101%);
+    &--middle {
+      @media screen and (max-width: $responsive-tablet) {
+        margin: 2rem auto;
+      }
     }
   }
 
   &__text {
-    border-radius: 50px;
     padding: 1rem 2rem;
+    width: 5rem;
 
     &--visible {
-      position: relative;
-      background: $color-article;
-      border: 2px solid $color-article;
-
-      z-index: 2;
-      transition: transform 1.5s ease;
-      transform: translateX(0%);
+      // background: $color-article;
+      // border: 2px solid $color-article;
+      border-radius: 5px 0 0 5px;
 
       &--board {
         background: $color-nav;
@@ -61,18 +55,13 @@
     }
 
     &--hidden {
-      position: absolute;
-      background: $color-white;
-      border: 2px solid $color-article;
+      // background: $color-white;
+      // border: 2px solid $color-article;
       font-weight: bold;
-      z-index: 1;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+      border-radius: 0 5px 5px 0;
 
       &--board {
-        background: $color-bkgd;
+        background: $color-white;
         border: 2px solid $color-nav;
       }
     }

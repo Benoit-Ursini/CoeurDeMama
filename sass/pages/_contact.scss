@@ -13,6 +13,6 @@
   &__link {
     display: block;
     @include font-text;
-    @include font-link-p($color-black, $color-bkgd, $color-article);
+    @include font-link-p($color-black, $color-bkgd, $color-nav);
   }
 }

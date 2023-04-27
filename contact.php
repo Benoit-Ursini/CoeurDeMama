@@ -5,8 +5,15 @@ session_start();
   <head>
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="./images/logos/shortcut.png" />
-    <title>Coeur de mama - Doula en ligne & en Algarve - Contact</title>
-    <meta name="description" content="" />
+    <title>Coeur de mama - Doula - Contact</title>
+    <meta
+      name="description"
+      content="Doula, je t'accompagne et te soutiens dans cette merveilleuse aventure qu'est la maternité. Tu retrouveras mes services en ligne mais également en présentiel en Algarve au Portugal."
+    />
+    <meta
+      name="keywords"
+      content="Doula, accompagnante, naissance, maternité, accouchement, physiologie, Algarve, Portugal, holistique, soutiens, formation, transmission, masterclass, Rebozo"
+    />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./styles.css" />
     <link
@@ -154,7 +161,7 @@ session_start();
       <?php endif; ?>
       <?php if(array_key_exists('success', $_SESSION)): ?>
       <div class="form__message form__message--success">
-        Votre email a bien été envoyé &#128521;
+        Ton email a bien été envoyé &#128521;
       </div>
       <?php endif; ?>
 
@@ -256,8 +263,11 @@ session_start();
         </form>
       </section>
 
-      <a href="#up"
-        ><img class="arrow-up" src="./images/arrow-up.svg" alt="Arrow up"
+      <a href="#up" title="Retourner en haut du site"
+        ><img
+          class="arrow-up"
+          src="./images/arrow-up.svg"
+          alt="Flèche vers le haut"
       /></a>
     </main>
 

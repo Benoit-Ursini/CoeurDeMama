@@ -11,6 +11,9 @@
     display: flex;
     justify-content: center;
     font-size: 2rem;
+    @media screen and (max-width: $responsive-laptop) {
+      font-size: 5rem;
+    }
   }
 
   &logo {

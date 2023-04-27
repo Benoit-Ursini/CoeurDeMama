@@ -119,6 +119,13 @@
       }
     }
 
+    &--bkgd {
+      background: $color-white;
+      padding: 1.5rem;
+      padding-left: 2.5rem;
+      border-radius: 5px;
+    }
+
     &__title {
       font-family: "Dancing Script", serif;
       font-size: 2rem;
