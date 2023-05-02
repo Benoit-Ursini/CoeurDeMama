@@ -133,6 +133,10 @@
       color: $color-nav;
       border-bottom: solid 2px $color-nav;
       margin-bottom: 1rem;
+      @media screen and (max-width: $responsive-laptop) {
+        font-size: 3rem;
+        line-height: 4rem;
+      }
     }
 
     &__img {

@@ -18,6 +18,9 @@
   font-weight: bold;
   padding: 3rem 3rem 0 3rem;
   margin-bottom: 3rem;
+  @media screen and (max-width: $responsive-laptop) {
+    font-size: 4rem;
+  }
 }
 
 @mixin font-text {

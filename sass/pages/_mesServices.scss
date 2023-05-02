@@ -2,6 +2,7 @@
   border-radius: 1rem;
   background-color: $color-white;
   box-shadow: 0.1rem 0.1rem 1rem $color-nav;
+  width: 60%;
 
   @media screen and (min-width: $responsive-laptop) {
     width: 40%;
@@ -25,6 +26,9 @@
     @include font-title;
     padding: 1rem;
     color: $color-nav;
+    @media screen and (max-width: $responsive-laptop) {
+      font-size: 2.5rem;
+    }
   }
 }
 
@@ -45,6 +49,10 @@
     font-family: "Dancing Script", serif;
     font-size: 2rem;
     font-weight: bold;
+    @media screen and (max-width: $responsive-laptop) {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
   }
 
   &__img {

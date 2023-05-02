@@ -173,9 +173,9 @@ session_start();
             alt=""
           />
           <h3 class="contact__name">Sara Ursini Bouziane</h3>
-          <p>Vila do Bispo, Algarve, Portugal</p>
+          <p>France</p>
           <a class="contact__link" href="tel:+33635105536"
-            >(+33) 06 35 10 55 36</a
+            >06 35 10 55 36</a
           >
           <a class="contact__link" href="mailto:sara.coeurdemama@gmail.com"
             >sara.coeurdemama@gmail.com</a

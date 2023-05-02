@@ -103,6 +103,9 @@ strong {
 }
 
 .reveal-quiz {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 2s;
   @media screen and (min-width: $responsive-laptop) {
     opacity: 1;
     transform: translateX(0%);
